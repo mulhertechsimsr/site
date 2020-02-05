@@ -1,0 +1,95 @@
+body{
+  background-image: url("../../imagens/ceu-estrelado-1.png");
+}
+.row,.column {
+  box-sizing: border-box;
+}
+
+.row:before,.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+
+.texto-menu, .texto-encontro, .marco, .iesp{
+  margin-top:10px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(0, 153, 153);
+  font-weight: bold;
+  width: 100%;
+}
+
+.texto-menu{
+  font-size: 24px;
+  line-height: 2;
+  opacity: 1.0;
+  max-width: 100% ;
+  height:237px;
+  z-index: 237;
+}
+
+.texto-encontro{
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: 1.6;
+  text-align: center;
+  position: absolute;
+}
+
+.marco{
+  margin-top: 120px;
+  font-size: 16px;
+}
+
+.iesp{
+  color: rgb(204, 0, 102);
+  font-size: 16px;
+} 
+
+
+.sobre_o_evento {
+  font-size: 36px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(0, 153, 153);
+  line-height: 0.667;
+  text-align:center;
+  position: absolute;
+  z-index: 204;
+  margin-top: 50px;
+  background: #FFF;
+}
+
+.inicial, .imagens-menu{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    position-right: center;
+    float: left;
+}
+
+.imagens-menu{
+  margin-top: 40px;
+
+}
+
+.anel{
+  position: relative;
+  top: -500px;
+  left: center;
+}
+
+ .astronauta{
+  position: relative;
+  right: 350px;
+  top: 80px;  
+ }
+
+ .logo{
+  position: relative;
+  top: -250px;
+  left:0px;
+}
