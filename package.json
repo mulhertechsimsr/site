@@ -4,7 +4,8 @@
   "description": "Mulher Tech Sim Senhor!",
   "main": "server.js",  
   "scripts": {
-    "start": "npx nodemon server.js",
+    "start": "node server",
+    "start-dev":  "npx nodemon server.js",
     "test": "jest"
   },
   "dependencies": {
