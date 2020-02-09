@@ -3,11 +3,11 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Umbler listening on port: ${port}`);
+  console.log(`Umbler listening on 	port: ${port}`);
 });
 
 app.get('/', (req, res) => {
-  res.render('index', {
+  res.render('./index', {
   	title: 'Mulher Tech Sim Senhor'
 	});
 });
