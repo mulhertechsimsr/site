@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 
-const server = app.listen(7000, () => {
-  console.log(`Express running on address: http://localhost:${server.address().port}`);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Umbler listening on port: ${port}`);
 });
 
 app.get('/', (req, res) => {
