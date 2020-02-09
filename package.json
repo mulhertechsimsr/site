@@ -2,14 +2,15 @@
   "name": "mulhertechsimsr",
   "version": "1.0.0",
   "description": "Mulher Tech Sim Senhor!",
-  "main": "server.js",  
+  "main": "server.js",
   "scripts": {
     "start": "node server",
-    "dev":  "npx nodemon server.js",
+    "dev": "npx nodemon server.js",
     "test": "jest"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "hover.css": "^2.3.2",
     "pug": "^2.0.4"
   },
   "devDependencies": {
@@ -20,8 +21,8 @@
     "url": "git+https://github.com/mulhertechsimsr/site.git"
   },
   "contributors": [
-    "mariannactx", 
-    "vanessapessoa", 
+    "mariannactx",
+    "vanessapessoa",
     "laysejuju"
   ],
   "license": "ISC",

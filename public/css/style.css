@@ -1,6 +1,9 @@
 body{
   background-image: url("../img/ceu-estrelado-1.png");
 }
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 .row,.column {
   box-sizing: border-box;
 }
@@ -92,4 +95,64 @@ body{
   position: relative;
   top: -250px;
   left:0px;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#astronauta {
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/astronauta.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -400px;
+  display: block;
+}
+
+#centro {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 220px;
+  margin-left: -100px;
+  height: 50%;
+  text-align: center;
+}
+
+.em-breve{
+  font-family: 'Lato', sans-serif;
+  font-size: 30pt;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 5pt 20pt;
+  color: #f15a24;
+  margin: 0;
+}
+
+#planeta1 {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/saturno.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 100px;
+  right: 200px;
 }
