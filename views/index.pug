@@ -1,11 +1,109 @@
 extends template
 
 block content
-  div.container
-    div#centro
-      div#logo
-      p.em-breve="2020"
-      p.em-breve="em breve"
-    div#astronauta.hvr-hang
-    div#planeta1
+  .container
+  .row
+    header
+      button.btn-menu
+        i.fa.fa-bars.fa-lg(aria-hidden='true')
+      a(href='')
+        h3.logo  Menu
+      nav.menu
+        a.btn-close
+          i.fa.fa-times
+        ul
+          li
+            a(href='#sobre') SOBRE
+          li
+            a(href='#') PALESTRANTES
+          li
+            a(href='#')  PROGRAMAÇÃO
+          li
+            a(href='#')  PARCEIROS
+          li
+            a(href='#')  CONTATO
+
+main
+        article
+          section
+            .row
+              .col-3
+                div#astronauta.hvr-hang
+              // final astronauta
+              .col-9
+                img.img-logo(src='../imagens/logo.png')
+                img.img-anel(src='../imagens/anel.png')
+              // final logo
+              // final row
+              .row
+                .col-12
+                  span.texto-inicio
+                    p.texto-encontro
+                      | ENCONTRO DE MULHERES
+                      br
+                      |  DE TI NA PARAÍBA
+                    p.marco  28 de março
+                    p.iesp  IESP
+                    button.btn.btn-secondary.button(type='button') Inscreva-se!
+                // final textos
+                // final row
+                // fim primeira sessao
+                section
+                  .row
+                    p.sobre  SOBRE O EVENTO
+                    a(name='sobre')
+                  .mulher-tech
+                    a(href='http://mulhertechsim.sr/')
+                      img(src='../imagens/mulher-tech.png', alt='MTSS 2019')
+                    span.texto-evento
+                      p
+                        | É um evento anual idealizado pelo Women Techmakers João Pessoa com o objetivo de reunir mulheres de TI em discussões sobre igualdade e diversidade, como também em oficinas sobre novas tecnologias.
+                      p
+                        | Desde 2016, o evento vem sendo realizado numa parceria entre diversos grupos que têm atividades voltadas ao tema de diversidade de gênero em TI.
+                      p
+                        | Em 2019, a proposta é integrar mulheres estudantes ou atuantes no mercado de tecnologia da informação;
+                  .row
+                    .texto-inicio
+                      p.(class='edições_anteriores')  Edições anteriores 
+                      .anos
+                        a(href='http://mulhertechsim.sr/')  2019
+                        |  
+                        a(href='http://mulhertechsim.sr/2018/')  2018
+                        |  |
+                        a(href='http://mulhertechsim.sr/2017/')  2017
+                        |  |
+                        a(href='http://mulhertechsim.sr/2016/')  2016
+      .row
+        .saturno
+          img(src='../imagens/saturno.png')
+      footer
+        img(src='../imagens/estrela-branca-1.png')
+        .row
+          .col-6
+            span.realizacao Realização
+            p.women  Women Techmakers João Pessoa
+            span
+              img.redes(src='../imagens/icon.png')
+              img.redes(src='../imagens/icon.png')
+              img.redes(src='../imagens/icon.png')
+          .col-6.news
+            span.realizacao News
+            form
+              input(type='email', name='email', placeholder='Seu email')
+            button.btn.btn-secondary.btn-assinar  Assinar
+        .row
+          img.forma-amarela(src='../imagens/forma amarela.png')
+      script(src='http://code.jquery.com/jquery-1.12.0.min.js')
+      script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+      script.
+        $(".btn-menu").click(function(){
+        $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+        $(".menu").hide();
+        });
+        $(".btn-close").click(function(){
+        $(".menu").hide();
+        });
+    
     
