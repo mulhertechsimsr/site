@@ -2,83 +2,83 @@ extends template
 
 block content
   .container
-  .row#menu
-    button.btn-menu
-      i.fa.fa-bars.fa-lg(aria-hidden='true')
-      a(href='')
-      h3.logo  Menu
-    nav.menu
-      a.btn-close
-        i.fa.fa-times
-      ul
-        li
-          a(href='#sobre') SOBRE
-        //li
-        //  a.menu-em-breve(href='#')="PALESTRANTES"
-        //li
-        //  a.menu-em-breve(href='#')="PROGRAMAÇÃO"
-        //li
-        // a.menu-em-breve(href='#')="PARCEIRAS"
-        li
-          a(href='#footer') CONTATO
-  main
-    article
-      section
-        .row#content
-          .col-3
-            div#astronauta.hvr-hang
-          .col-9
-            img.img-logo(src='img/logo.png')
-            img.img-anel(src='img/anel.png')
-          .row
-            .col-12
-              span.texto-inicio
-                p.texto-encontro
-                  | ENCONTRO DE MULHERES
-                  br
-                  |  DE TI NA PARAÍBA
-                p.marco  28 de março
-                button.btn.btn-secondary.button(type='button') inscrições em breve
-            section
-              .row
-                p.sobre  SOBRE O EVENTO
-                a(name='sobre')
-              .row
-                .mulher-tech.col-12.col-md-6
-                  a(href='http://mulhertechsim.sr/')
-                    img(src='img/mulher-tech.png', alt='MTSS 2019')
-                .col-12.col-md-6
-                  span.texto-evento
-                    p
-                      | É um evento anual idealizado pelo Women Techmakers João Pessoa com o objetivo de reunir mulheres de TI em discussões sobre igualdade e diversidade, como também em oficinas sobre novas tecnologias.
-                    p
-                      | Desde 2016, o evento vem sendo realizado numa parceria entre diversos grupos que têm atividades voltadas ao tema de diversidade de gênero em TI.
-                    p
-                      | Em 2019, a proposta é integrar mulheres estudantes ou atuantes no mercado de tecnologia da informação;
-              .row#saturno
-                .saturno
-                  img(src='img/saturno.png')
-        footer#footer
-          img(src='img/estrela-branca-1.png')
-          .row
-            .col-6
-              span.realizacao Realização
-              p.women  Women Techmakers João Pessoa
-              span
-                img.redes(src='img/icon.png')
-                img.redes(src='img/icon.png')
-                img.redes(src='img/icon.png')
-            .col-6.news
-              span.realizacao News
-              form
-                input(type='email', name='email', placeholder='Seu email')
-              button.btn.btn-secondary.btn-assinar  Assinar
-          .row
-            img.forma-amarela(src='img/forma amarela.png')
-    script(src='js/jquery.js')
-    script.
-      $(".btn-menu").click(function(){$(".menu").show();});
-      $(".btn-close").click(function(){$(".menu").hide();});
-      $(".btn-close").click(function(){$(".menu").hide();});
+    .row#menu
+      button.btn-menu
+        i.fa.fa-bars.fa-lg(aria-hidden='true')
+        a(href='')
+        h3.logo  Menu
+      nav.menu
+        a.btn-close
+          i.fa.fa-times
+        ul
+          li
+            a(href='#sobre') SOBRE
+          //li
+          //  a.menu-em-breve(href='#')="PALESTRANTES"
+          //li
+          //  a.menu-em-breve(href='#')="PROGRAMAÇÃO"
+          //li
+          // a.menu-em-breve(href='#')="PARCEIRAS"
+          li
+            a(href='#footer') CONTATO
+    main
+      article
+        section
+          .row#content
+            .col-3
+              div#astronauta.hvr-hang
+            .col-9
+              img.img-logo(src='img/logo.png')
+              img.img-anel(src='img/anel.png')
+            .row
+              .col-12
+                span.texto-inicio
+                  p.texto-encontro
+                    | ENCONTRO DE MULHERES
+                    br
+                    |  DE TI NA PARAÍBA
+                  p.marco  28 de março
+                  button.btn.btn-secondary.button(type='button') inscrições em breve
+              section
+                .row
+                  p.sobre  SOBRE O EVENTO
+                  a(name='sobre')
+                .row
+                  .mulher-tech.col-12.col-md-6
+                    a(href='http://mulhertechsim.sr/')
+                      img(src='img/mulher-tech.png', alt='MTSS 2019')
+                  .col-12.col-md-6
+                    span.texto-evento
+                      p
+                        | É um evento anual idealizado pelo Women Techmakers João Pessoa com o objetivo de reunir mulheres de TI em discussões sobre igualdade e diversidade, como também em oficinas sobre novas tecnologias.
+                      p
+                        | Desde 2016, o evento vem sendo realizado numa parceria entre diversos grupos que têm atividades voltadas ao tema de diversidade de gênero em TI.
+                      p
+                        | Em 2019, a proposta é integrar mulheres estudantes ou atuantes no mercado de tecnologia da informação;
+                .row#saturno
+                  .saturno
+                    img(src='img/saturno.png')
+          footer#footer
+            img(src='img/estrela-branca-1.png')
+            .row
+              .col-6
+                span.realizacao Realização
+                p.women  Women Techmakers João Pessoa
+                span
+                  img.redes(src='img/icon.png')
+                  img.redes(src='img/icon.png')
+                  img.redes(src='img/icon.png')
+              .col-6.news
+                span.realizacao News
+                form
+                  input(type='email', name='email', placeholder='Seu email')
+                button.btn.btn-secondary.btn-assinar  Assinar
+            .row
+              img.forma-amarela(src='img/forma amarela.png')
+      script(src='js/jquery.js')
+      script.
+        $(".btn-menu").click(function(){$(".menu").show();});
+        $(".btn-close").click(function(){$(".menu").hide();});
+        $(".btn-close").click(function(){$(".menu").hide();});
     
     
