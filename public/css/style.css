@@ -112,11 +112,7 @@ float:left; text-align: center;
 /*SOBRE O EVENTO*/
 .sobre{
   font-size: 150%; font-weight: bold; background: #FFF; text-align: center; position: relative;
-  color: rgb(0, 153, 153); float: left; width: 100%; margin-bottom: : 30px;
-}
-
-.mulher-tech{
-
+  color: rgb(0, 153, 153); float: left; width: 100%; margin-bottom: 30px;
 }
 
 .texto-evento{
@@ -125,7 +121,7 @@ float:left; text-align: center;
 }
 /*Rodape*/
 .saturno{
-  width: 24%; position: relative; text-align: center; left: 40%; z-index: 343;
+  width: 24%; position: relative; text-align: center; left: 90%; z-index: 343;
 }
 
 .forma-amarela{
@@ -177,9 +173,6 @@ input {
   font-weight: bold;
 }
 
-/*MOBILE FIRST*/
-
-
 @media(min-width: 1024px){
     .btn-menu{display: none;}
 
@@ -195,11 +188,8 @@ input {
     .menu li a{ font-size: 1em; padding: 15px; text-align: center; }
 
     .menu li a:hover{border: none;}
-
-   
-
-
 }
+
 #logo {
   width: 200px;
   height: 200px;
