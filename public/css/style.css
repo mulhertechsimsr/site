@@ -143,9 +143,11 @@ float:left; text-align: center;
     font-size: 180%; float: none;
   }
 
-  .redes{
+  .redes, .instagram{
     margin: 2%; width: 10%;
   }
+
+  .instagram{width: 17%;}
 
 .news{
   border-left: 2px solid #FFF;
@@ -189,6 +191,7 @@ input {
 
     .menu li a:hover{border: none;}
 }
+
 
 #logo {
   width: 200px;
