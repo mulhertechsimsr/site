@@ -16,6 +16,17 @@ ul{
   list-style: none;
 }
 
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 3% 0 0 0;
+}
+#content, #saturno {
+  margin: 0 3%;
+  padding: 0 3%;
+}
 img{
   max-width: 100%;
 }
@@ -30,7 +41,7 @@ p{
 }
   /*Cabeçalho*/
 .menu{
-  width: 100%; padding: 3% 4%; text-transform: uppercase; line-height: 1.6;
+  padding: 3% 4%; text-transform: uppercase; line-height: 1.6;
 }
 
 .logo{
@@ -44,7 +55,7 @@ p{
 
 /*Menu*/
 .menu{
-  display: none; width: 100%; height: 100%; position: fixed; float: right; background-color: rgba(0, 0, 0,0.9);
+  display: none; height: 100%; position: fixed; float: right; background-color: rgba(0, 0, 0,0.9);
   top: 0; left: 0; z-index: 24325;
 }
 
@@ -53,7 +64,7 @@ p{
 }
 
 .menu ul{ 
-  width: 100%; float:left; text-align: center;
+float:left; text-align: center;
  }
 
 .menu li{
@@ -114,7 +125,7 @@ p{
 }
 /*Rodape*/
 .saturno{
-  width: 24%; position: absolute; left: 74%; z-index: 343;
+  width: 24%; position: relative; text-align: center; left: 40%; z-index: 343;
 }
 
 .forma-amarela{
@@ -124,6 +135,8 @@ p{
  footer{
     background-color: rgb(174, 2, 100); width: 100%; height: auto; padding: 3%;
     background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
   }
 
   .realizacao, .women{
@@ -174,8 +187,8 @@ input {
 
     .logo{display: none;}
 
-    .menu{width: 100%; height: 56px; display: block; background-color: rgba(255,255,255,0.9); text-align: center; 
-      padding: 0; left: 10% ; font-size:1.4em; position: relative;}
+    .menu{height: 56px; display: block; background-color: rgba(255,255,255,0.9); text-align: center; 
+      padding: 0; font-size:1.4em; position: relative;}
 
     .menu li{ padding: 0; float: left;text-align: center;}
 
@@ -199,16 +212,19 @@ input {
 #astronauta {
   width: 250px;
   height: 250px;
+}
+
+#astronauta:after{
+  content: "";
+  width: 250px;
+  height: 250px;
   background-image: url("../img/astronauta.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -400px;
   display: block;
+  margin-top: 75px;
+  position: absolute;
 }
 
 #centro {
