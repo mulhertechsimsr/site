@@ -125,7 +125,7 @@ float:left; text-align: center;
 }
 
 .forma-amarela{
-  width: 20%; position: absolute; left: 80%;
+  width: 24%; position: relative; left: 90%;
 }
 
  footer{
@@ -143,11 +143,9 @@ float:left; text-align: center;
     font-size: 180%; float: none;
   }
 
-  .redes, .instagram{
-    margin: 2%; width: 10%;
+  .redes{
+    margin: 5% 2%; width: 10%;
   }
-
-  .instagram{width: 17%;}
 
 .news{
   border-left: 2px solid #FFF;
