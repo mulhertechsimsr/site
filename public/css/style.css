@@ -16,7 +16,10 @@
 
 a{
   text-decoration: none;
+  font-weight: bold;
+  font: italic;
 }
+
 
 ul{
   list-style: none;
@@ -43,8 +46,6 @@ p{
 
 .row{
     padding: 3%;
-    margin: 3%;
-    border: 1px solid;
 }
   /*Cabeçalho*/
 .menu{
@@ -52,7 +53,7 @@ p{
 }
 
 .logo{
-  color: rgb(0, 153, 153);background: #FFF; text-align: center; float: left;
+  color: rgb(0, 153, 153);background: #FFF; text-align: center; float: left; font-weight: 900; font-style: italic;
 
 }
 
@@ -140,15 +141,15 @@ footer{
 }
 
 .realizacao, .women{
-  color: #FFF; background: none; 
+  color: #FFF; background: none; margin-left: 4%;
 }
 
 .realizacao{
-  font-size: 150%; float: none; font-weight: bold;
+  font-size: 150%; float: none; font-weight: bold; margin-left: 2%;;
 }
 
 .redes{
-  margin: 5% 2%; width: 10%;
+  margin: 3% 2%; width: 10%;
 }
 
 .separa{
@@ -187,6 +188,14 @@ input {
   position: left;
   text-align: center;
   width: 100%;
+}
+
+.anos{
+  font-size: 95%;
+  color: rgb(0, 153, 153);
+  font-weight: bold;
+  line-height: 1.333;
+  margin: .5%;
 }
 
 
@@ -276,22 +285,5 @@ input {
   right: 200px;
 }
 
-.anos{
-  font-size: 95%;
-  color: rgb(0, 153, 153);
-  font-weight: bold;
-  line-height: 1.333;
-  margin: .5%;
-}
 
-._2019_____2018_____2017_____2016_ {
-  font-size: 18px;
-  font-family: "Lato";
- 
-  text-align: left;
-  position: absolute;
-  left: 1571.312px;
-  top: 2482.496px;
-  z-index: 211;
-}
 
