@@ -44,6 +44,7 @@ p{
 .row{
     padding: 3%;
     margin: 3%;
+    border: 1px solid;
 }
   /*Cabeçalho*/
 .menu{
@@ -85,13 +86,10 @@ float:left; text-align: center;
   border: 1px solid #009999;
 }
 
-.img-astronauta{
-  margin-top: 30%; width: 100%;
-}
-
 .img-logo{
   position: absolute; left: 18%; top: 10%; width: 30%;
 }
+
 
 .img-anel{
   position: absolute; top: 10%; left: 10%; width:48%; margin-bottom: 30%;
@@ -176,14 +174,21 @@ input {
 }
 
 /*ANOS ANTERIORES*/
-.edições_anteriores {
+.edicoes_anteriores {
   padding-top: 20px; 
-  font-size: 30px;
-  font-family: "Lato";
+  font-size: 140%;
   color: rgb(204, 0, 102);
   line-height: 0.8;
   font-weight: bold;
+  margin-top: 0px;
 }
+
+.centraliza{
+  position: left;
+  text-align: center;
+  width: 100%;
+}
+
 
 @media(min-width: 1024px){
   .btn-menu{display: none;}
@@ -270,3 +275,23 @@ input {
   top: 100px;
   right: 200px;
 }
+
+.anos{
+  font-size: 95%;
+  color: rgb(0, 153, 153);
+  font-weight: bold;
+  line-height: 1.333;
+  margin: .5%;
+}
+
+._2019_____2018_____2017_____2016_ {
+  font-size: 18px;
+  font-family: "Lato";
+ 
+  text-align: left;
+  position: absolute;
+  left: 1571.312px;
+  top: 2482.496px;
+  z-index: 211;
+}
+
