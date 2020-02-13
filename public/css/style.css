@@ -99,7 +99,7 @@ float:left; text-align: center;
 
 .texto-inicio{
   line-height: 1.6; text-align: center; position: relative; color: rgb(0, 153, 153); float: left;
-  width: 100%;
+  width: 100%; margin-top: 10%;
 }
 
 .marco{
