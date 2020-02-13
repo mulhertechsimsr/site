@@ -8,6 +8,12 @@
   display: grid;
  }
 
+.estrela{
+  position: relative;
+  top: 20px;
+  left: 2%;
+}
+
 a{
   text-decoration: none;
 }
@@ -125,7 +131,7 @@ float:left; text-align: center;
 }
 
 .forma-amarela{
-  width: 24%; position: relative; left: 90%;
+  width: 24%; position: relative; left: 90%; top: -90px;
 }
 
 footer{
@@ -135,25 +141,31 @@ footer{
   position: relative;
 }
 
-  .realizacao, .women{
-    color: #FFF; background: none; width: 30;
-  }
+.realizacao, .women{
+  color: #FFF; background: none; 
+}
 
-  .realizacao{
-    font-size: 180%; float: none;
-  }
+.realizacao{
+  font-size: 150%; float: none; font-weight: bold;
+}
 
-  .redes{
-    margin: 5% 2%; width: 10%;
-  }
+.redes{
+  margin: 5% 2%; width: 10%;
+}
 
-.news{
+.separa{
   border-left: 2px solid #FFF;
 }
 
-form{
-  margin: 3%; padding: 1%;
+.new{
+  margin-left: ;
 }
+
+form{
+  margin-top: 2%;
+  padding: 1%;
+}
+
 input {
   width: 100%; height: 30px;
 }
@@ -174,20 +186,24 @@ input {
 }
 
 @media(min-width: 1024px){
-    .btn-menu{display: none;}
+  .btn-menu{display: none;}
 
-    .btn-close{display: none;}
+  .btn-close{display: none;}
 
-    .logo{display: none;}
+  .logo{display: none;}
 
-    .menu{height: 56px; display: block; background-color: rgba(255,255,255,0.9); text-align: center; 
-      padding: 0; font-size:1.4em; position: relative;}
+  .menu{height: 56px; display: block; background-color: rgba(255,255,255,0.9); text-align: center; 
+    padding: 0; font-size:1.4em; position: relative;}
 
-    .menu li{ padding: 0; float: left;text-align: center;}
+  .menu li{ padding: 0; float: left;text-align: center;}
 
-    .menu li a{ font-size: 1em; padding: 15px; text-align: center; }
+  .menu li a{ font-size: 1em; padding: 15px; text-align: center; }
 
-    .menu li a:hover{border: none;}
+  .menu li a:hover{border: none;}
+
+  .realizacao{
+    font-size: 180%;
+  }
 }
 
 
@@ -200,6 +216,7 @@ input {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
 #astronauta {
   width: 250px;
   height: 250px;
