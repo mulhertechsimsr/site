@@ -128,12 +128,12 @@ float:left; text-align: center;
   width: 24%; position: relative; left: 90%;
 }
 
- footer{
-    background-color: rgb(174, 2, 100); width: 100%; height: auto; padding: 3%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative;
-  }
+footer{
+  background-color: rgb(174, 2, 100); width: 100%; height: auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
 
   .realizacao, .women{
     margin: 0 3%; padding: 1.2%; color: #FFF; background: none; width: 30;
