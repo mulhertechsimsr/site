@@ -41,14 +41,11 @@ block content
             .mulher-tech.col-12.col-md-6
               a(href='http://mulhertechsim.sr/')
                 img(src='img/mulher-tech.png', alt='MTSS 2019')
-            .col-12.col-md-6
-              span.texto-evento
+            .col-12.col-md-6.texto-evento
                 p
                   | É um evento anual idealizado pelo Women Techmakers João Pessoa com o objetivo de reunir mulheres de TI em discussões sobre igualdade e diversidade, como também em oficinas sobre novas tecnologias.
                 p
                   | Desde 2016, o evento vem sendo realizado numa parceria entre diversos grupos que têm atividades voltadas ao tema de diversidade de gênero em TI.
-                p
-                  | Em 2019, a proposta é integrar mulheres estudantes ou atuantes no mercado de tecnologia da informação;
           .row#edicoes_anteriores
             p.centraliza
               |Edições anteriores
@@ -76,8 +73,8 @@ block content
                
             .col-6.separa
               span.realizacao.new News
-              form.new
-                input(type='email', name='email', placeholder='Seu email')
+              include newsletter
+              
               button.btn.btn-secondary.btn-assinar  Assinar
  
       script(src='js/jquery.js')

@@ -112,7 +112,7 @@ p{
 }
 
 .marco{
-  background: #FFF; font-size: 100%; margin-bottom: 7%;;
+  background: #FFF; font-size: 150%; margin-bottom: 40px;
  }
 
 .iesp{
@@ -124,6 +124,7 @@ p{
   font-size: 120%; 
   font-family: 'Lato', sans-serif;
  font-weight: bold; 
+ margin-top: 20px;
 }
 
 /*SOBRE O EVENTO*/
@@ -133,7 +134,7 @@ p{
 }
 
 .texto-evento{
-  position: relative; padding: 7%; width: 100%; text-align: justify; font-size: 18px;
+  position: relative; padding: 10px; width: 100%; text-align: justify; font-size: 18px;
   font-family: 'Roboto', sans-serif; color: rgb(0, 153, 153);
 }
 /*Rodape*/
@@ -271,7 +272,7 @@ input {
   }
   
   .texto-encontro{
-    font-size: 150%; padding-top: 0px; margin-top: 0px;
+    font-size: 150%; padding-top: 0px; margin-top: 20 px;
  }
 
   .btn{
