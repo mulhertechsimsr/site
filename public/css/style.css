@@ -98,7 +98,7 @@ float:left; text-align: center;
 }
 
 .img-anel{
-  position: absolute; top: 4vh; left: 0.3%; width:78%; margin-bottom: 50%;
+  position: absolute; top: 4vh; left: 0.3%; width:78%; margin-bottom: 60%; z-index: 20;
 }
 
 .texto-inicio{
