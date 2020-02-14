@@ -210,19 +210,21 @@ input {
 }
 
 /*ANOS ANTERIORES*/
-.edicoes_anteriores {
-  padding-top: 20px; 
-  font-size: 140%;
-  color: rgb(204, 0, 102);
-  line-height: 0.8;
-  font-weight: bold;
+#edicoes_anteriores { 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
   margin-top: 0px;
 }
 
 .centraliza{
+  font-size: 140%;
+  color: rgb(204, 0, 102);
   position: left;
   text-align: center;
   width: 100%;
+  line-height: 0.8;
+  font-weight: bold;
 }
 
 .anos{
