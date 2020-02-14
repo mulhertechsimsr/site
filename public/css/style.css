@@ -56,7 +56,11 @@ p{
 }
 
 .btn-menu{
-  width: 56px; height: 56px; text-align: center; color: #009999; cursor: pointer; background: #FFF; float:left;
+  text-align: center;
+  color: #009999;
+  cursor: pointer;
+  background: #FFF
+
 }
 
 /*Menu*/
@@ -103,7 +107,7 @@ p{
 
 .texto-inicio{
   line-height: 1.6; text-align: center; position: relative; color: rgb(0, 153, 153); float: left;
-  width: 100%; margin-top:50%; 
+  width: 100%; 
 }
 
 .marco{
@@ -115,8 +119,10 @@ p{
 }
 
 .texto-encontro{
-  background: #FFF; padding-top: 10%; font-size: 120%; margin-top:10px; font-family: 'Lato', sans-serif;
-   font-weight: bold; 
+  background: #FFF; 
+  font-size: 120%; 
+  font-family: 'Lato', sans-serif;
+ font-weight: bold; 
 }
 
 /*SOBRE O EVENTO*/
@@ -134,16 +140,29 @@ p{
   width: 24%; position: relative; text-align: center; left: 90%; z-index: 343;
 }
 
-.forma-amarela{
-  width: 20%; position: relative; left: 90%; top: -90px;
+footer{
+  width: 100%; 
+  height: auto;
+  position: relative;
+  margin-bottom: 40px;
+
 }
 
-footer{
-  background-color: rgb(174, 2, 100); width: 100%; height: auto;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  position: relative;
+#footer-content {
+  background-color: rgb(174, 2, 100); 
+  position: relative;  
+  z-index: 3;
 }
+
+
+.forma-amarela{
+    width: 20%;
+    position: absolute;
+    right: -50px;
+    bottom: -30px;
+    z-index: 0
+}
+
 
 .realizacao, .women{
   color: #FFF; background: none; margin-left: 4%;
@@ -212,7 +231,7 @@ input {
   .logo{display: none;}
 
   .menu{height: 56px; display: block; background-color: rgba(255,255,255,0.9); text-align: center; 
-    padding: 0; font-size:1.4em; position: relative; margin-bottom: 5%;}
+    padding: 0; font-size:1.4em; position: relative;}
 
   .menu li{ padding: 0; float: left;text-align: center;}
 
@@ -242,10 +261,6 @@ input {
     font-size: 150%; padding-top: 0px; margin-top: 0px;
  }
 
- .texto-inicio{
-  margin-top:25%;
- }
- 
   .btn{
     margin-bottom: 3%;
   }
@@ -255,70 +270,12 @@ input {
   }
 }
 
-
-#logo {
-  width: 200px;
-  height: 200px;
-  background-image: url("../img/logo.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
-#astronauta {
-  width: 250px;
-  height: 250px;
-}
-
-#astronauta:after{
-  content: "";
-  width: 250px;
-  height: 250px;
-  background-image: url("../img/astronauta.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  margin-top: 75px;
-  position: absolute;
-}
-
-#centro {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  width: 220px;
-  margin-left: -100px;
-  height: 50%;
-  text-align: center;
-}
-
-.em-breve{
-  font-family: 'Lato', sans-serif;
-  font-size: 30pt;
-  display: block;
-  text-align: center;
+.anos{
+  font-size: 95%;
+  color: rgb(0, 153, 153);
   font-weight: bold;
-  font-style: italic;
-  white-space: nowrap;
-  background-color: #fff;
-  padding: 5pt 20pt;
-  color: #f15a24;
-  margin: 0;
+  line-height: 1.333;
+  margin: .5%;
 }
-
-#planeta1 {
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/saturno.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 100px;
-  right: 200px;
-}
-
 
 

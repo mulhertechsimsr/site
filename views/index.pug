@@ -25,11 +25,7 @@ block content
       article
         section
           .row#content
-            .col-3
-              img.hvr-hang.img-astronauta(src='img/astronauta.png')
-            .col-9
-              img.img-logo(src='img/logo.png')
-              img.img-anel(src='img/anel.png')
+            include animation
             .row
               .col-12
                 span.texto-inicio
@@ -69,32 +65,28 @@ block content
                   .saturno
                     img(src='img/saturno.png')
           footer#footer
-            img.estrela(src='img/estrela-branca-1.png')
-            .row
-              .col-6
-                span.realizacao Realização
-                p.women  Women Techmakers João Pessoa
-                span.realizacao
-                  a(href='https://www.instagram.com/mulhertechsimsr/')
-                    img.redes(src='img/email.png') 
-                  a(href='https://www.instagram.com/mulhertechsimsr/')
-                    img.redes(src='img/instagram.png') 
-                  a(href='https://www.facebook.com/mulhertechsimsr/?ref=page_internals')
-                    img.redes(src='img/facebook.png') 
-                 
-              .col-6.separa
-                span.realizacao.new News
-                form.new
-                  input(type='email', name='email', placeholder='Seu email')
-                button.btn.btn-secondary.btn-assinar  Assinar
-          .row
-            img.forma-amarela(src='img/forma amarela.png')
-          
-            
+            #footer-content
+              .row
+                .col-6
+                  span.realizacao Realização
+                  p.women  Women Techmakers João Pessoa
+                  span.realizacao
+                    a(href='https://www.instagram.com/mulhertechsimsr/')
+                      img.redes(src='img/email.png') 
+                    a(href='https://www.instagram.com/mulhertechsimsr/')
+                      img.redes(src='img/instagram.png') 
+                    a(href='https://www.facebook.com/mulhertechsimsr/?ref=page_internals')
+                      img.redes(src='img/facebook.png') 
+                   
+                .col-6.separa
+                  span.realizacao.new News
+                  form.new
+                    input(type='email', name='email', placeholder='Seu email')
+                  button.btn.btn-secondary.btn-assinar  Assinar
+ 
       script(src='js/jquery.js')
       script.
         $(".btn-menu").click(function(){$(".menu").show();});
-        $(".btn-close").click(function(){$(".menu").hide();});
         $(".btn-close").click(function(){$(".menu").hide();});
     
     
