@@ -9,21 +9,16 @@
  }
 
  .borda{
-   border: 2px solid  rgb(204, 0, 102);
+   border: 1px solid  rgb(204, 0, 102);
  }
 
 .estrela{
-  position: relative;
-  top: 20px;
-  left: 2%;
+  position: relative; top: 20px; left: 2%;
 }
 
 a{
-  text-decoration: none;
-  font-weight: bold;
-  font: italic;
+  text-decoration: none; font-weight: bold; font: italic;
 }
-
 
 ul{
   list-style: none;
@@ -34,15 +29,10 @@ ul{
 }
 
 #menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 3% 0 0 0;
+  display: flex; align-items: center; justify-content: center; margin: 0; padding: 3% 0 0 0;
 }
 #content, #saturno {
-  margin: 0 3%;
-  padding: 0 3%;
+  margin: 0 3%; padding: 0 3%;
 }
 img{
   max-width: 100%;
@@ -80,7 +70,7 @@ p{
 }
 
 .menu ul{ 
-float:left; text-align: center;
+  float:left; text-align: center;
  }
 
 .menu li{
@@ -111,7 +101,7 @@ float:left; text-align: center;
 
 .texto-inicio{
   line-height: 1.6; text-align: center; position: relative; color: rgb(0, 153, 153); float: left;
-  width: 100%; margin-top:40%; 
+  width: 100%; margin-top:25%; 
 }
 
 .marco{
@@ -233,15 +223,25 @@ input {
   }
 
   .img-logo{
-    position: absolute; left: 15%; top: 10%; width: 40%;
+    position: absolute; left: 18%; top: 10%; width: 30%;
   }
   
   .img-anel{
-    position: absolute; top: 10%; left: 3%; width:68%; margin-bottom: 50%;
+    position: absolute; top:-1.5vh; left: 10%; width:44%; margin-bottom: 50%;
   }
+  
   .texto-encontro{
     font-size: 150%; padding-top: 0px; margin-top: 0px;
  }
+
+ .texto-inicio{
+  margin-top:25%;
+ }
+
+ 
+  .btn{
+    margin-bottom: 3%;
+  }
 }
 
 
