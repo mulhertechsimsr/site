@@ -8,9 +8,6 @@
   display: grid;
  }
 
- .borda{
-   border: 1px solid  rgb(204, 0, 102);
- }
 
 .estrela{
   position: relative; top: 20px; left: 2%;
@@ -29,10 +26,14 @@ ul{
 }
 
 #menu {
-  display: flex; align-items: center; justify-content: center; margin: 0; padding: 3% 0 0 0;
+  display: flex; 
+  align-items: 
+  center; justify-content: 
+  center; margin: 0; 
+  padding: 20px 0 0 0;
 }
 #content, #saturno {
-  margin: 0 3%; padding: 0 3%;
+  margin: 0 3%; padding: 0 3%; position: relative;
 }
 img{
   max-width: 100%;
@@ -136,8 +137,18 @@ p{
   font-family: 'Roboto', sans-serif; color: rgb(0, 153, 153);
 }
 /*Rodape*/
+#saturno {
+  height: 60px;
+  margin-bottom: 40px;
+}
 .saturno{
-  width: 24%; position: relative; text-align: center; left: 90%; z-index: 343;
+  width: 24%; 
+  position: relative; 
+  text-align: center; 
+  bottom: 0; 
+  right: 10px; 
+  position: absolute;
+  z-index: 343;
 }
 
 footer{
