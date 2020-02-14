@@ -1,0 +1,373 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h2, h3, h4{
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 5pt;
+}
+
+h3, h4{
+    font-size: 1.17em;
+}
+
+h4{
+    margin:0;
+}
+
+header{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    position: relative;
+    background-size: 50%;
+}
+
+#header #hamburger { 
+    display: none 
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;    
+}
+
+main #bg-image{
+    width: calc(100% + 20px);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    left: -15px;
+    top: -10px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg-inicial.png);
+    background-position: 56% bottom;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#menu{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #fff;
+    color: #000;
+    visibility: visible;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.menu-item{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    font-family: medium-content-sans-serif-font;
+    text-transform: uppercase;
+    font-size: 8pt;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.menu-item a{
+    text-decoration: none;
+}
+
+.menu-item span{
+    font-size: 12pt;
+    background: #fff;
+}
+
+#inicial {
+    width: fit-content;
+    margin: 0 auto;
+    height: 84%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#inicial #logo {
+    height: 50%;
+    width: min-content;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+
+#inicial #logo:before {
+    content: "oi";
+    color: transparent;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    background: #fff;
+    top: 20%;
+    left: 20%;
+}
+
+#inicial #logo img {
+    width: unset;
+    height: 100%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+#inicial #logo #logo-out{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#inicial #slogan{
+    white-space: pre;
+}
+
+.slogan{
+    display: inline-block;
+    padding: 5pt;
+    background: #fff;
+    color: #000;
+    margin: 0 0 5pt 15pt;
+    font-family: 'Staatliches', cursive;
+    position: relative;
+    font-size: 18pt;
+}
+
+.slogan a{
+text-decoration: none;
+}
+
+#inicial #slogan span#local,
+#inicial #slogan span#data{
+    font-size: 14pt;
+}
+
+#inicial #slogan span#local{
+    margin-top: 10pt;
+}
+
+#parceiras {
+    position: absolute;
+    background-color: #fff;
+    width: 205px;
+    height: 30px;
+    bottom: 100%;
+    z-index: 2;
+    padding: 5pt;
+    left: calc(50% - ( 102.5px + 5pt ) );
+    letter-spacing: 0pt;
+    border-bottom: 1px solid;
+}
+
+#parceiras span:first-child{
+    line-height: 36px;
+    font-family: 'Staatliches', cursive;
+    display: inline-block;
+    float: left;
+}
+
+.parceiras{
+    width: 60px;
+    height: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    padding: 0;
+    margin: 0 0 0 5pt;
+}
+
+#conductor{
+    background-image: url(../img/conductor.png);
+}
+
+#iesp{
+    background-image: url(../img/iesp.png);
+}
+
+footer{
+    width: calc(100% - 28pt);
+    padding: 0 14pt;
+    bottom: 0;
+    position: absolute;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-size: 50%;
+}
+
+footer > div, 
+footer > form{
+    width: max-content;
+    padding: 5px;
+    letter-spacing: 2pt;
+}
+
+footer #instagram{
+    margin-left: 10px;
+}
+
+footer form *{
+    background: transparent;
+    padding: 3pt 11pt;
+    border: none;
+    display: inline-block;
+}
+
+footer * {
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+}
+
+footer form button {
+    margin: 0;
+    text-align: center;
+    font-size: 12pt;
+    background: #fff;
+}
+
+footer .fab.fa-instagram{
+    top: 1px;
+    position: relative;
+}
+
+footer form {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+footer form input {
+    border-bottom: 1px solid;
+    margin: 0 5pt 0 0;
+    padding: 0;
+    font-family: courier;
+    min-width: 300px;
+    background: #fff;
+}
+
+footer > div a {
+    text-decoration: none;
+    color: #fff;
+    background: #fff;
+} 
+
+span.close {
+    font-size: 20pt;
+    top: 24pt;
+    right: 11pt;
+    position: absolute;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+}
+
+#content > div{
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.content{
+    height: 100%;
+    padding: 0 15px;
+    position: relative;
+}
+
+.content-titulo{
+    height: 20pt;
+    padding: 25pt 26pt 5pt 0;
+    margin:0;
+}
+
+.content-titulo span i{
+    letter-spacing: 0;
+}
+
+.content-texto{
+    width: 100%;
+    height: calc(100% - 25pt - 20pt - 5pt - 1em);
+    overflow-y: auto;
+    margin: 0.5em 0 0 0;
+    text-indent: 10pt;
+}
+
+.content-texto p{
+    margin-bottom:0;
+
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: medium-content-serif-font, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0,0,0,.84);
+    
+    font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: -.004em;
+}
+
+#googlemaps{
+    width: calc(100% - 3em);
+    height: calc(100% - 3em);
+    margin-left: 0;
+    position: relative;
+    top: 1.5em;
+}
+
+#colaboradoras{
+    text-align: center;
+}
+
+#colaboradoras img{
+    margin: 15px .5% 10px 0;
+    width: 20%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.content-sobre{
+    padding: 10px 0;
+}
+
+#content-sobre-img{
+    height: 226px;
+    background-image: url(../img/sobre.png);
+    background-size: cover;
+    background-position: center
+}

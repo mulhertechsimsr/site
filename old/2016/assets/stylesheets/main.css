@@ -1,0 +1,113 @@
+.programacao-area,
+.content .list-tabs {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.content .list-tabs .l_item {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    margin-left: -1px;
+    background: #ddd;
+    color: #555;
+    cursor: pointer;
+}
+
+.content .list-tabs .l_item.current {
+    background: #ff6633;
+    color: #fff;
+}
+/*Tab de programacao*/
+.content .programacao-tab {
+    /*opacity: 0;*/
+    /*height: 0;*/
+    display: none;
+}
+
+.content .programacao-tab.current {
+    /*opacity: 1;*/
+    display: block;
+}
+
+/*Tabelas*/
+.content-prog {
+    opacity: 0;
+}
+
+.content-prog.active {
+    opacity: 1;
+}
+
+.table {
+    width: 100%;
+    /*background: blue;*/
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table__margin-bottom {
+    margin-bottom: 20px;
+}
+
+.table thead {
+    border-bottom: 1px solid #ddd;
+}
+.table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table td,
+.table th {
+    padding: 8px;
+    line-height: 1.42857143;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table thead th {
+    color: #d4145a;
+}
+
+
+/* misc
+========*/
+.text-center {
+    text-align: center;
+}
+
+.btn.register:hover {
+    background: #ff8157;
+}
+
+.btn.pop-register {
+    background: #d4145a;
+}
+
+.btn.pop-register:hover {
+    background: #ed3b7c;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    
+    .table-action thead {
+    display: none;
+  }
+
+.table-action tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .table-action td {
+    border: 0;
+  }
+
+.table-action td:not(:first-child) {
+    display: block;
+  }
+}

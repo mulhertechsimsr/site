@@ -1,0 +1,53 @@
+#inicial {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+}
+    
+#inicial #logo {
+    height: 33%;
+    float: none;
+    flex: 1;
+    display: flex;
+    top: 5vh;
+}
+
+#inicial #slogan {
+    margin: 0;
+    float: none;
+    text-align: center;
+    flex: 2;
+    top: 5vh;
+    position: relative;
+}
+
+#inicial #slogan span {
+    margin: 0;
+}
+
+.content-texto p{
+    font-size: 16px;
+}
+
+footer {
+    width: calc(100% - 14pt);
+    padding: 0 7pt;
+    justify-content: space-between;
+}
+
+footer form input{
+    margin: 0;
+    min-width: unset;
+}
+
+footer form button{
+    border: none;
+    white-space: nowrap;
+    padding: 0;
+}
+
+footer div span span:nth-child(3){
+    clear: both;
+    float: none;
+    display: inline-block;
+}

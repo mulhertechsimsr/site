@@ -1,0 +1,53 @@
+/* logo */
+#header #logo #logo-out,
+#inicial #logo #logo-out{
+    animation: rotacao-logo 20s infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotacao-logo {
+    from {transform: rotate(0deg)}
+    to   {transform: rotate(360deg)}
+}
+  
+@keyframes rotacao-logo {
+    from {transform: rotate(0deg)}
+    to   {transform: rotate(360deg)}
+}
+
+/* seções do menu */
+#inicial{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#content > div{
+    background: #fff;
+}
+
+#header #menu {
+    z-index: 999;
+}
+
+
+#header #menu li span {
+    color: #000;
+    transition: all .5s;
+}
+
+#header #menu li:hover span,
+#header #menu li.open span{
+    padding: 0 5px;
+    color:inherit;
+}
+
+#content {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#content.open {
+    opacity: 1;
+    visibility: visible;
+}

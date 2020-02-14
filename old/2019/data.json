@@ -1,0 +1,122 @@
+{
+    "menu": { 
+        "sobre": "Sobre",
+        "programacao": "Programação"
+    },
+    "programacao": [
+        {
+            "titulo": "Credenciamento",
+            "icone": "fa-address-card",
+            "hora": "8:00 - 9:00",
+            "descricao": ""
+        },
+        {
+            "titulo": "Abertura",
+            "foto": "logo-symbol-in.png",
+            "hora": "9:00 - 9:30",
+            "descricao": ""
+        },
+        {
+            "palestrante": "Dandara Sousa",
+            "foto": "dandara.png",
+            "contato": {
+                "twitter": "dandaramcsousa",
+                "github": "dandaramcsousa",
+                "linkedin": "dandaramcsousa"
+            },
+            "titulo": "O feminismo na Ciência de Dados",
+            "icone": "fa-calendar",
+            "hora": "9:30 - 10:20",
+            "descricao": "Uma discussão sobre como o pensamento feminista influencia na coleta e visualização de dados."
+        },
+        {
+            "palestrante": "Thays Silva",
+            "foto": "thays.jpg",
+            "contato": {
+                "twitter": "",
+                "github": "thaysfsil",
+                "linkedin": "thays-silva-97987641"
+            },
+            "titulo": "Python no Titanic",
+            "hora": "10:20 - 11:10",
+            "descricao": "Machine learning para meros mortais: uma introdução básica de conceitos de aprendizagem de máquina com python"
+        },
+        {
+            "palestrante": "Sáskya Gurgel",
+            "foto": "saskya.png",
+            "contato": {
+                "twitter": "saskyagurgel",
+                "github": "saskyagurgel",
+                "linkedin": "saskyagurgel"
+            },
+            "titulo": "Mulher multithread: minha trajetória em TI",
+            "hora": "11:10 - 12:00",
+            "descricao": "Sáskya Gurgel tem formação em Análise e Desenvolvimentos pelo IFPB e Mestrado em Informática pelo PPGI-UFPB. Atua como Analista de Sistemas e Coordenadora da Unidade de Sistemas Comerciais na Caern, atua também como CTO na empresa Greencoders e no aplicativo Hamgo, e também é Arquiteta de Software e Full Stack Developer na empresa Lance Hotéis. Tem paixão em loop infinito por programação, ciências sociais e vôlei."
+        },
+        {
+            "titulo": "Almoço",
+            "icone": "fa-utensils",
+            "hora": "12:00 - 13:30",
+            "descricao": ""
+        },
+        {
+            "palestrante": "Maria Clara Magalhães",
+            "foto": "mariaclaramagalhaes.jpeg",
+            "contato": {
+                "twitter": "",
+                "github": "",
+                "linkedin": "mclaramagalhaes"
+            },
+            "titulo": "Acelerando as mulheres inovadoras que transformam a sociedade",
+            "hora": "13:30 - 14:30",
+            "descricao": "Um furacão de possibilidades e ações que geram impacto positivo acontece quando mulheres são empreendedoras. Uma conversa, com atividades mão na massa, para mostrar que o futuro é empreendedor e feminino."
+        },
+        {
+            "palestrante": "Mesa redonda",
+            "foto": "",
+            "contato": {
+                "twitter": "",
+                "facebook": "",
+                "github": "",
+                "instagram": "",
+                "linkedin": ""
+                },
+            "titulo": "Mulheres inspiradoras ao nosso redor",
+            "hora": "14:30 - 17:00",
+            "icone": "fa-comments",
+            "descricao": "",
+            "palestrantes": [
+                {
+                    "foto": "camila.png",
+                    "nome": "Camila Gehrke",
+                    "cargo": "Professora e Pesquisadora na UFPB",
+                    "texto": "Possui graduação em Engenharia Elétrica pela Universidade Regional do Noroeste do Estado do Rio Grande do Sul (2008), mestrado e doutorado pela Universidade Federal de Campina Grande (2010 e 2014). Atualmente, sua área de atuação é nas seguintes linhas de Smart Grids: Geração Distribuída, Fontes Renováveis, Qualidade de energia, Otimização, Microrredes. Também participa de projetos de pesquisa e desenvolvimento, além de ser voluntária IEEE como coordenadora do Young Professionals (YP)."
+                },
+                {
+                    "foto": "liliane.png",
+                    "nome": "Liliane Machado",
+                    "cargo": "Professora e Pesquisadora na UFPB",
+                    "texto":"Começou sua aventuras na Computação nos anos 80 brincando com um TK85 para jogar. Seguiu sua formação na Computação, enveredando pela área de Computação Gráfica, quando encantou-se pela Realidade Virtual e concluiu mestrado e doutorado nesta área. Desenvolveu em 2001 o primeiro simulador para treinamento médico do Brasil. Atua hoje no LabTEVE nas áreas de jogos e ambientes virtuais. Seu desafio tem sido produzir pesquisa tecnológica e inovadora, bem como utilizá-la na produção de aplicações que possam ser de utilização imediata pela sociedade. Seus principais trabalhos podem ser encontrados em: http://lattes.cnpq.br/0240551533292579"
+                },
+                {
+                    "foto": "selene.png",
+                    "nome": "Selene Ribeiro",
+                    "cargo": "Gerente de Sistemas na Conductor",
+                    "texto": "Tecnóloga em Processamento de Dados, Especialista em Metodologia para Engenharia de Software e Gerência de Projetos. Com mais de 20 anos de atuação em TI, atuou como desenvolvedora, formadora de times de teste de software e gestão de times das áreas técnicas e de negócio. Atualmente, atua como Agile Coach e professora visitante em cursos de pós-graduação. Apaixonada por Pessoas, Agilidade e TI. Engenheira de software que desenvolve pessoas."
+                },
+                {
+                    "foto": "simone.png",
+                    "nome": "Simone Tejo",
+                    "cargo": "Analista de Processos da INDRA",
+                    "texto": "Mestre em Engenharia da Computação pela USP. Possui especialização em Engenharia de Software pelas Faculdades Associadas de São Paulo (FASP-SP) e é graduada em Ciências da Computação pela UFCG. Atuação nas áreas de Tecnologia da Informação e Gerenciamento de Processos de Negócio (BPM). Possui certificação CBPP (Certified Business Processo Professional) pela ABPMP Internacional (Association of Business Process Management Professionals) e, atualmente, é a Gestora Regional da ABPMP no Estado da Paraíba. Também possui certificação PSPO (Professional Scrum Product Owner) para metodologias ágeis."
+                }
+            ]
+        },
+        {
+            "titulo": "Encerramento",
+            "icone": "fa-glass-cheers",
+            "hora": "17:00 - 17:30",
+            "descricao": ""
+        }
+    ]
+}

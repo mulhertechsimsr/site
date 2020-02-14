@@ -1,0 +1,15 @@
+.parsley-type,
+.parsley-min,
+.parsley-minlength,
+.parsley-errors-list.filled,
+li.parsley-required {
+    display: block;
+    color: #d4145a;
+    text-align: left;
+    padding-top: 5px;
+}
+
+
+#your-last-name {
+    visibility: hidden;
+}
