@@ -7,6 +7,10 @@
   .btn-menu{display: none;}
 
   .btn-close{display: none;}
+  
+  .btn-assinar{
+    margin: 3%;
+  }
 
   .logo{display: none;}
 
