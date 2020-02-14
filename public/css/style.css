@@ -1,6 +1,11 @@
 *{
-  margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300;
-  box-sizing: border-box; font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0; 
+  font-size: 100%; 
+  border: none; 
+  outline: none; 
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -8,13 +13,10 @@
   display: grid;
  }
 
-
-.estrela{
-  position: relative; top: 20px; left: 2%;
-}
-
 a{
-  text-decoration: none; font-weight: bold; font: italic;
+  text-decoration: none; 
+  font-weight: bold; 
+  font: italic;
 }
 
 ul{
@@ -32,9 +34,13 @@ ul{
   center; margin: 0; 
   padding: 20px 0 0 0;
 }
+
 #content, #saturno {
-  margin: 0 3%; padding: 0 3%; position: relative;
+  margin: 0 3%; 
+  padding: 0 3%; 
+  position: relative;
 }
+
 img{
   max-width: 100%;
 }
@@ -48,12 +54,18 @@ p{
 }
   /*Cabeçalho*/
 .menu{
-  padding: 3% 4%; text-transform: uppercase; line-height: 1.6;
+  padding: 3% 4%; 
+  text-transform: uppercase; 
+  line-height: 1.6;
 }
 
 .logo{
-  color: rgb(0, 153, 153);background: #FFF; font-weight: 900; font-style: italic; margin-bottom: 40px; font-size: 180%;
-
+  color: rgb(0, 153, 153);
+  background: #FFF; 
+  font-weight: 900; 
+  font-style: italic; 
+  margin-bottom: 40px; 
+  font-size: 180%;
 }
 
 .btn-menu{
@@ -66,16 +78,27 @@ p{
 
 /*Menu*/
 .menu{
-  display: none; height: 100%; position: fixed; float: right; background-color: rgba(0, 0, 0,0.9);
-  top: 0; left: 0; z-index: 24325;
+  display: none; 
+  height: 100%; 
+  position: fixed; 
+  float: right; 
+  background-color: rgba(0, 0, 0,0.9);
+  top: 0; 
+  left: 0; 
+  z-index: 24325;
 }
 
 .btn-close{
-  font-size: 1.5em; color: #FFF; cursor: pointer; margin: 2% 3% 0 0; float: right;
+  font-size: 1.5em; 
+  color: #FFF;
+  cursor: pointer; 
+  margin: 2% 3% 0 0; 
+  float: right;
 }
 
 .menu ul{ 
-  float:left; text-align: center;
+  float:left; 
+  text-align: center;
  }
 
 .menu li{
@@ -83,7 +106,11 @@ p{
 }
 
 .menu li a{
-  font-size:2em; color: #009999;  padding: 1.5% 3%; text-decoration: none;text-align: center;
+  font-size:2em; 
+  color: #009999;  
+  padding: 1.5% 3%; 
+  text-decoration: none;
+  text-align: center;
 }
 
 .menu  li a:hover{
@@ -91,51 +118,71 @@ p{
 }
 
 .img-logo{
-  position: absolute; left: 23%; top: 6vh; width: 55%;
-}
-
-.img-astronauta{
-  width: 250px;
-  height: 130px;
-  left: 20%;
-  position: absolute;
-  top: 7vh;
+  position: absolute; 
+  left: 23%; 
+  top: 6vh; 
+  width: 55%;
 }
 
 .img-anel{
-  position: absolute; top: 4vh; left: 10%; width:78%; margin-bottom: 60%; z-index: 20;
+  position: absolute; 
+  top: 4vh; 
+  left: 10%; 
+  width:78%; 
+  margin-bottom: 60%; 
+  z-index: 20;
 }
 
 .texto-inicio{
-  line-height: 1.6; text-align: center; position: relative; color: rgb(0, 153, 153); float: left;
+  line-height: 1.6; 
+  text-align: center; 
+  position: relative; 
+  color: rgb(0, 153, 153); 
+  float: left;
   width: 100%; 
 }
 
 .marco{
-  background: #FFF; font-size: 150%; margin-bottom: 40px;
+  background: #FFF; 
+  font-size: 150%; 
+  margin-bottom: 40px;
  }
 
 .iesp{
- background: #FFF; color: rgb(204, 0, 102); font-size: 100%;
+ background: #FFF; 
+ color: rgb(204, 0, 102); 
+ font-size: 100%;
 }
 
 .texto-encontro{
   background: #FFF; 
   font-size: 120%; 
   font-family: 'Lato', sans-serif;
- font-weight: bold; 
- margin-top: 20px;
+  font-weight: bold; 
+  margin-top: 20px;
 }
 
 /*SOBRE O EVENTO*/
 .sobre{
-  font-size: 150%; font-weight: bold; background: #FFF; text-align: center; position: relative;
-  color: rgb(0, 153, 153); float: left; width: 100%; margin-bottom: 30px; margin-top: 40px;
+  font-size: 150%; 
+  font-weight: bold; 
+  background: #FFF; 
+  text-align: center; 
+  position: relative;
+  color: rgb(0, 153, 153); 
+  float: left; width: 100%; 
+  margin-bottom: 30px; 
+  margin-top: 40px;
 }
 
 .texto-evento{
-  position: relative; padding: 10px; width: 100%; text-align: justify; font-size: 18px;
-  font-family: 'Roboto', sans-serif; color: rgb(0, 153, 153);
+  position: relative; 
+  padding: 10px; 
+  width: 100%; 
+  text-align: justify; 
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif; 
+  color: rgb(0, 153, 153);
 }
 /*Rodape*/
 #saturno {
@@ -157,7 +204,6 @@ footer{
   height: auto;
   position: relative;
   margin-bottom: 40px;
-
 }
 
 #footer-content {
@@ -165,7 +211,6 @@ footer{
   position: relative;  
   z-index: 3;
 }
-
 
 .forma-amarela{
     width: 20%;
@@ -185,7 +230,7 @@ footer{
 }
 
 .redes{
-  margin: 3% 2%; width: 10%;
+  margin: 4% 2%; width: 15%;
 }
 
 .separa{
@@ -240,54 +285,6 @@ input {
   margin: .5%;
 }
 
-
-@media(min-width: 1024px){
-  .btn-menu{display: none;}
-
-  .btn-close{display: none;}
-
-  .logo{display: none;}
-
-  .menu{height: 56px; display: block; background-color: rgba(255,255,255,0.9); text-align: center; 
-    padding: 0; font-size:1.4em; position: relative;}
-
-  .menu li{ padding: 0; float: left;text-align: center;}
-
-  .menu li a{ font-size: 1em; padding: 15px; text-align: center; }
-
-  .menu li a:hover{border: none;}
-
-  .realizacao{
-    font-size: 180%;
-  }
-
-  .img-astronauta{
-    width: 250px;
-    position: absolute;
-    top: 3vh;
-    height: auto;
-  }
-  .img-logo{
-    position: absolute; left: 18%; top: 10%; width: 30%;
-  }
-  
-  .img-anel{
-    position: absolute; top:-1.5vh; left: 10%; width:44%; margin-bottom: 50%;
-  }
-  
-  .texto-encontro{
-    font-size: 150%; padding-top: 0px; margin-top: 20 px;
- }
-
-  .btn{
-    margin-bottom: 3%;
-  }
-
-  .marco{
-    margin: 0px;
-  }
-}
-
 .anos{
   font-size: 95%;
   color: rgb(0, 153, 153);
@@ -295,5 +292,3 @@ input {
   line-height: 1.333;
   margin: .5%;
 }
-
-
