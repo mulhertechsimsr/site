@@ -5,11 +5,12 @@ const sizes = () => {
     var inicial = byId("inicial");
     inicial.style.height = "";
     inicial.style.height = (pageHeight- menuHeight) + "px"; 
+    inicial.style.paddingTop = menuHeight + "px";
 }
 
 const setupMenu = () => {
-  $(".btn-menu").click(() => {$(".menu").show();});
-  $(".btn-close").click(() => {$(".menu").hide();});
+  $(".btn-menu").click(() => { $(".menu").show(); });
+  $(".btn-close").click(() => { $(".menu").hide(); });
   
   $('nav a').click( (e) => {
     e.preventDefault();
