@@ -1,24 +1,30 @@
-window.addEventListener("load", sizes);
-window.addEventListener("resize", sizes);
-
-function sizes(){
+const sizes = () => {
     var menuHeight = byId("menu").offsetHeight;
     var pageHeight = window.innerHeight ;
     
     var inicial = byId("inicial");
     inicial.style.height = "";
-    inicial.style.height = (pageHeight- menuHeight) + "px";
-    
+    inicial.style.height = (pageHeight- menuHeight) + "px"; 
 }
 
-function byId(id){
-    return document.getElementById(id);
+const setupMenu = () => {
+  $(".btn-menu").click(() => {$(".menu").show();});
+  $(".btn-close").click(() => {$(".menu").hide();});
+  
+  $('nav a').click( (e) => {
+    e.preventDefault();
+    var id = $(e.target).attr('href');
+    console.log("id", id);
+      targetOffset = $(id).offset().top;
+    $('html, body').animate({
+      scrollTop: targetOffset
+    },500);
+  });
 }
 
-function byClass(classe){
-    return document.getElementsByClassName(classe);
-}
+window.addEventListener("load", () => {
+  setupMenu();
+  sizes();
+});
 
-function getClass(id){
-    return byId(id).getAttribute("class");
-}
+window.addEventListener("resize", sizes);
