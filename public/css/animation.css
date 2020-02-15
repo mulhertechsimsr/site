@@ -84,8 +84,8 @@
 
 body .scene,
 body .scene_saturn,
-body .scene_saturn__shadowRing,
 body .scene_saturn__ring,
+body .scene_saturn__ring .small, 
 body .scene_saturn__ring .small_part,
 body .scene_saturn__ring .layer_part {
     position: absolute;
@@ -108,13 +108,60 @@ body .scene_saturn {
 }
 
 body .scene_saturn__ring {
-  -webkit-transform: rotateX(84deg) rotateY(8deg);
-          transform: rotateX(84deg) rotateY(8deg);
+  -webkit-transform: translateX(0%)   translateY(10px) rotateX(-80deg) rotateY(25deg) rotate(0deg);
+          transform: translateX(0%)   translateY(10px) rotateX(-80deg) rotateY(25deg) rotate(0deg);
   -webkit-transform-origin: 50% 200px;
           transform-origin: 50% 200px;
-  -webkit-animation: ring 20s infinite linear;
-          animation: ring 20s infinite linear;
+  -webkit-animation: ring 20s infinite ease-in-out;
+          animation: ring 20s infinite ease-in-out;
   top: -80px;
+}
+
+
+@-webkit-keyframes ring {
+  0% {
+    -webkit-transform: translateX(8px) rotateX(80deg) rotateY(12deg);
+            transform: translateX(8px) rotateX(80deg) rotateY(12deg);
+  }
+  25% {
+      -webkit-transform: translateX(10px) rotateX(80deg) rotateY(12deg);
+            transform: translateX(10px) rotateX(80deg) rotateY(12deg);  
+  }
+  50% {
+    -webkit-transform: translateX(8px) rotateX(80deg) rotateY(0deg);
+            transform: translateX(8px) rotateX(80deg) rotateY(0deg);
+  }
+  75% {
+        -webkit-transform: translateX(-10px) rotateX(80deg) rotateY(0deg);
+            transform: translateX(-10px) rotateX(80deg) rotateY(0deg);
+  }
+  100% {
+        -webkit-transform: translateX(8px) rotateX(80deg) rotateY(12deg);
+            transform: translateX(8px) rotateX(80deg) rotateY(12deg);
+  }
+}
+
+@keyframes ring {
+  0% {
+    -webkit-transform: translateX(0%)   translateY(10px) rotateX(-80deg) rotateY(30deg) rotate(0deg);
+            transform: translateX(0%)   translateY(10px) rotateX(-80deg) rotateY(30deg) rotate(0deg);
+  }
+  25% {
+    -webkit-transform: translateX(-25%) translateY(20px) rotateX(-80deg) rotateY(30deg) rotate(90deg);
+            transform: translateX(-25%) translateY(20px) rotateX(-80deg) rotateY(30deg) rotate(90deg);  
+  }
+  50% {
+    -webkit-transform: translateX(0%)   translateY(-12px) rotateX(-80deg) rotateY(30deg) rotate(180deg);
+            transform: translateX(0%)   translateY(-12px) rotateX(-80deg) rotateY(30deg) rotate(180deg);
+  }
+  75% {
+    -webkit-transform: translateX(25%)   translateY(-25px) rotateX(-80deg) rotateY(30deg) rotate(270deg);
+            transform: translateX(25%)   translateY(-25px) rotateX(-80deg) rotateY(30deg) rotate(270deg);
+  }
+  100% {
+    -webkit-transform: translateX(0%)   translateY(10px) rotateX(-80deg) rotateY(30deg) rotate(359deg);
+            transform: translateX(0%)   translateY(10px) rotateX(-80deg) rotateY(30deg) rotate(359deg);
+  }
 }
 
 body .scene_saturn__ring .layer {
@@ -144,57 +191,6 @@ body .scene_saturn__ring .layer:nth-of-type(3) {
 body .scene_saturn__ring .layer:nth-of-type(4) {
   top: -18px;
 }
-
-
-
-@-webkit-keyframes ring {
-  0% {
-    -webkit-transform: translateX(8px) rotateX(80deg) rotateY(8deg);
-            transform: translateX(8px) rotateX(80deg) rotateY(8deg);
-  }
-  25% {
-      -webkit-transform: translateX(10px) rotateX(80deg) rotateY(8deg);
-            transform: translateX(10px) rotateX(80deg) rotateY(8deg);  
-  }
-  50% {
-    -webkit-transform: translateX(8px) rotateX(80deg) rotateY(0deg);
-            transform: translateX(8px) rotateX(80deg) rotateY(0deg);
-  }
-  75% {
-        -webkit-transform: translateX(-10px) rotateX(80deg) rotateY(0deg);
-            transform: translateX(-10px) rotateX(80deg) rotateY(0deg);
-  }
-  100% {
-        -webkit-transform: translateX(8px) rotateX(80deg) rotateY(8deg);
-            transform: translateX(8px) rotateX(80deg) rotateY(8deg);
-  }
-}
-
-@keyframes ring {
-  0% {
-    -webkit-transform: translateX(0px) rotateX(80deg) rotateY(2deg);
-            transform: translateX(0px) rotateX(80deg) rotateY(2deg);
-  }
-  25% {
-      -webkit-transform: translateX(30px) rotateX(80deg) rotateY(2deg);
-            transform: translateX(30px) rotateX(80deg) rotateY(2deg);  
-  }
-  50% {
-    -webkit-transform: translateX(0px) rotateX(80deg) rotateY(0deg);
-            transform: translateX(0px) rotateX(80deg) rotateY(0deg);
-  }
-  75% {
-        -webkit-transform: translateX(-30px) rotateX(80deg) rotateY(0deg);
-            transform: translateX(-30px) rotateX(80deg) rotateY(0deg);
-  }
-  100% {
-        -webkit-transform: translateX(0px) rotateX(80deg) rotateY(2deg);
-            transform: translateX(0px) rotateX(80deg) rotateY(2deg);
-  }
-}
-
-
-
 
 body .scene_saturn__ring .layer_part:nth-of-type(1) {
   -webkit-transform: translateY(-50%) rotate(7.2deg);
