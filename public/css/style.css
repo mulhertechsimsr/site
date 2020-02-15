@@ -8,9 +8,8 @@
   font-family: 'Lato', sans-serif;
 }
 
-.body{
+body{
   background-image:url("../img/ceu-estrelado-1.png");
-
 }
 
 .container{
@@ -56,6 +55,8 @@ p{
 
 .row{
     padding: 3%;
+    margin-left: 0;
+    margin-right: 0;
 }
   /*Cabeçalho*/
 .menu{
@@ -191,7 +192,6 @@ footer{
   width: 100%; 
   height: auto;
   position: relative;
-  margin-bottom: 40px;
 }
 
 #footer-content {
