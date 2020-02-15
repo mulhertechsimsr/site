@@ -8,8 +8,12 @@
   font-family: 'Lato', sans-serif;
 }
 
-.container{
+.body{
   background-image:url("../img/ceu-estrelado-1.png");
+
+}
+
+.container{
   display: grid;
  }
 
@@ -222,11 +226,11 @@ footer{
 
 
 .realizacao, .women{
-  color: #FFF; background: none; margin-left: 4%;
+  color: #FFF; background: none; margin-left: 2%;
 }
 
 .realizacao{
-  font-size: 150%; float: none; font-weight: bold; margin-left: 2%;;
+  font-size: 150%; float: none; font-weight: bold; 
 }
 
 .redes{
@@ -257,6 +261,7 @@ input {
 .btn-assinar{
   color: rgb(204, 0, 102); background: #FFF; margin-top: 7%; float: right;
   font-weight: bold;
+  border: none;
 }
 
 /*ANOS ANTERIORES*/
