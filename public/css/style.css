@@ -33,10 +33,11 @@ ul{
 
 #menu {
   display: flex; 
-  align-items: 
-  center; justify-content: 
-  center; margin: 0; 
-  padding: 20px 0 0 0;
+  align-items:center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+
 }
 
 #content, #saturno {
@@ -119,22 +120,6 @@ p{
 
 .menu  li a:hover{
   border: 1px solid #009999;
-}
-
-.img-logo{
-  position: absolute; 
-  left: 23%; 
-  top: 6vh; 
-  width: 55%;
-}
-
-.img-anel{
-  position: absolute; 
-  top: 4vh; 
-  left: 10%; 
-  width:78%; 
-  margin-bottom: 60%; 
-  z-index: 20;
 }
 
 .texto-inicio{
