@@ -1,0 +1,26 @@
+{
+  "sobre": {
+    "texto": "É um evento anual idealizado pelo Women Techmakers João Pessoa com o objetivo de reunir mulheres de TI em discussões sobre igualdade e diversidade, como também em oficinas sobre novas tecnologias. <br> <br> Desde 2016, o evento vem sendo realizado numa parceria entre diversos grupos que têm atividades voltadas ao tema de diversidade de gênero em TI."
+  },
+  "programacao": [
+    {
+        "palestrante": "Thays Silva",
+        "foto": "thays.jpg",
+        "contato": {
+            "twitter": "",
+            "github": "thaysfsil",
+            "linkedin": "thays-silva-97987641"
+        },
+        "titulo": "Python no Titanic",
+        "hora": "10:20 - 11:10",
+        "descricao": "Machine learning para meros mortais: uma introdução básica de conceitos de aprendizagem de máquina com python"
+    }
+  ],
+  "patrocinadoras": [
+    {
+      "nome": "VSoft",
+      "tipo": "ouro",
+      "logo": "vsoft.png"
+    }
+  ]
+}
