@@ -6,6 +6,9 @@ const sizes = () => {
     inicial.style.height = "";
     inicial.style.height = (pageHeight- menuHeight) + "px"; 
     inicial.style.paddingTop = menuHeight + "px";
+
+    var sobre = byId("sobre");
+    sobre.style.paddingTop = menuHeight + "px";
 }
 
 const setupMenu = () => {

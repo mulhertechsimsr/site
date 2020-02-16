@@ -183,6 +183,21 @@ p{
   margin-top: 40px;
 }
 
+.sobre::after {
+  content: "";
+  background-image: url("../img/cometa.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  top: -100px;
+  right: -10px;
+
+}
+
 .texto-evento{
   position: relative; 
   padding: 10px; 

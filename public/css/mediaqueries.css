@@ -24,6 +24,15 @@
     padding-top: 20px;
     border-top: 2px solid #FFF;
   }
+
+  #forma {
+    top: -15%;
+  }
+
+  .sobre::after{
+    top: -100px;
+    right: -10px;
+  }
   
 }
 
