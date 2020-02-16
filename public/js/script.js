@@ -1,5 +1,7 @@
+let menuHeight;
+
 const sizes = () => {
-    var menuHeight = byId("menu").offsetHeight;
+    menuHeight = byId("menu").offsetHeight;
     var pageHeight = window.innerHeight ;
     
     var inicial = byId("inicial");
@@ -7,8 +9,6 @@ const sizes = () => {
     inicial.style.height = (pageHeight) + "px"; 
     inicial.style.paddingTop = menuHeight + "px";
 
-    var sobre = byId("sobre");
-    sobre.style.paddingTop = menuHeight + "px";
 }
 
 const setupMenu = () => {
@@ -19,10 +19,13 @@ const setupMenu = () => {
     e.preventDefault();
     var id = $(e.target).attr('href');
     console.log("id", id);
+
+    if(id) {
       targetOffset = $(id).offset().top;
-    $('html, body').animate({
-      scrollTop: targetOffset
-    },500);
+      $('html, body').animate({
+        scrollTop: targetOffset - menuHeight
+      },500);
+    }
   });
 }
 

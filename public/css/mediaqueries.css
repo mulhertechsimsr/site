@@ -4,8 +4,25 @@
   }
 
   #sobre-img {
-    padding-bottom: 40%
+    padding-bottom: 20%;
   }
+
+  #grupo {
+    width: 90%;
+  }
+
+  #forma {
+    top: -15%;
+    left: -7%;
+    width: 75%;
+  }
+
+  #planeta {
+      right: -5%;
+      top: -44px;
+      width: 81px;
+  }
+
 
   #footer-left{
     justify-content: space-between;
@@ -19,10 +36,12 @@
     border-top: 2px solid #FFF;
   }
 
-  #forma {
-    top: -15%;
+  #sobre-foto {
+    width: 100%;
+    text-align: center;
   }
 
+  
   .sobre::after{
     top: -100px;
     right: -10px;
@@ -78,7 +97,7 @@
   .btn{
     margin-bottom: 3%;
   }
-  
+
   .separa{
     border-left: 2px solid #FFF;
   }

@@ -8,6 +8,12 @@
   font-family: 'Lato', sans-serif;
 }
 
+html, body, main, #content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-image:url("../img/ceu-estrelado-1.png");
   background-size: 32%;
@@ -32,12 +38,6 @@ ul{
   margin-bottom: 10%;
 }
 
-#saturno {
-  margin: 0 3%; 
-  padding: 0 3%; 
-  position: relative;
-}
-
 img{
   max-width: 100%;
 }
@@ -51,7 +51,9 @@ p{
     margin-left: 0;
     margin-right: 0;
 }
-  /*Cabeçalho*/
+
+/*Cabeçalho*/
+/*Menu*/
 
 #menu {
   display: flex; 
@@ -92,8 +94,6 @@ p{
   background-color: rgba(255,255,255,0.9);
   padding: 0 10px;
 }
-
-/*Menu*/
 
 .menu{
   padding: 3% 4%; 
@@ -144,6 +144,17 @@ p{
   border: 1px solid #009999;
 }
 
+/* INICIAL */
+
+section#inicial {
+  min-height: fit-content;
+}
+
+section#inicial .row {
+  height: 100%;
+  min-height: fit-content;
+}
+
 .texto-inicio{
   line-height: 1.6; 
   text-align: center; 
@@ -174,6 +185,7 @@ p{
 }
 
 /*SOBRE O EVENTO*/
+
 .sobre{
   font-size: 150%; 
   font-weight: bold; 
@@ -182,8 +194,6 @@ p{
   position: relative;
   color: rgb(0, 153, 153); 
   float: left; width: 100%; 
-  margin-bottom: 30px; 
-  margin-top: 40px;
 }
 
 .sobre::after {
@@ -211,8 +221,6 @@ p{
   color: rgb(0, 153, 153);
 }
 
-
-
 #sobre-foto {
   width: 90%;
   position: relative;
@@ -227,9 +235,11 @@ p{
   position: relative;
 
 }
+
 #forma {
-    left: -13%;
-    top: 3%;
+  left: -8%;
+  top: -20%;
+  width: 90%;
 }
 
 #planeta {
@@ -238,11 +248,40 @@ p{
 }
 
 
+/*ANOS ANTERIORES*/
+#edicoes_anteriores { 
+  padding-bottom: 20px;
+  background-color: #fff;
+  margin-top: 10%;
+}
+
+.centraliza{
+  font-size: 140%;
+  color: rgb(204, 0, 102);
+  position: left;
+  text-align: center;
+  width: 100%;
+  line-height: 0.8;
+  font-weight: bold;
+}
+
+.anos{
+  font-size: 95%;
+  color: rgb(0, 153, 153);
+  font-weight: bold;
+  line-height: 1.333;
+  margin: .5%;
+}
+
 /*Rodape*/
 #saturno {
   height: 60px;
   margin-bottom: 40px;
+  padding: 0 3%; 
+  position: relative;
+
 }
+
 .saturno{
   width: 24%; 
   position: relative; 
@@ -273,8 +312,6 @@ footer{
     z-index: 0
 }
 
-
-
 #realizacao-logo {
   width: 150px;
   margin: 20px 0;
@@ -301,12 +338,11 @@ footer{
   text-align: center;
 }
 
-.titulo {
+footer .titulo {
   font-size: 150%; 
   font-weight: bold; 
   display: block;
 }
-
 
 #redes {
   margin: 0;
@@ -325,7 +361,7 @@ footer{
   color:#fff;
 }
 
-form{
+footer form{
   margin-top: 2%;
   padding: 1%;
 }
@@ -341,37 +377,4 @@ input#email {
   color: rgb(204, 0, 102); background: #FFF; margin-top: 7%; float: right;
   font-weight: bold;
   border: none;
-}
-
-/*ANOS ANTERIORES*/
-#edicoes_anteriores { 
-  padding-bottom: 20px;
-  background-color: #fff;
-  margin-top: 10%;
-}
-
-.centraliza{
-  font-size: 140%;
-  color: rgb(204, 0, 102);
-  position: left;
-  text-align: center;
-  width: 100%;
-  line-height: 0.8;
-  font-weight: bold;
-}
-
-.anos{
-  font-size: 95%;
-  color: rgb(0, 153, 153);
-  font-weight: bold;
-  line-height: 1.333;
-  margin: .5%;
-}
-
-.anos{
-  font-size: 95%;
-  color: rgb(0, 153, 153);
-  font-weight: bold;
-  line-height: 1.333;
-  margin: .5%;
 }
