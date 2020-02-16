@@ -6,7 +6,7 @@ const sizes = () => {
     
     var inicial = byId("inicial");
     inicial.style.height = "";
-    inicial.style.height = (pageHeight) + "px"; 
+    inicial.style.minHeight = (pageHeight) + "px"; 
     inicial.style.paddingTop = menuHeight + "px";
 
 }

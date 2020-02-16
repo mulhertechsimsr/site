@@ -147,7 +147,7 @@ p{
 /* INICIAL */
 
 section#inicial {
-  min-height: fit-content;
+  height: 100%;
 }
 
 section#inicial .row {
