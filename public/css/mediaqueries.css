@@ -8,7 +8,7 @@
   .btn-close{display: none;}
   
   .btn-assinar{
-    margin: 3%;
+    margin: 3% 0;
   }
 
   .logo{display: none;}
@@ -47,7 +47,7 @@
     margin-bottom: 3%;
   }
 
-  .redes{
-    margin: 3% 2%; width: 10%;
+  .separa{
+    border-left: 2px solid #FFF;
   }
 }
