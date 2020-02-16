@@ -1,15 +1,30 @@
 @media(min-width: 768px){
-
+  .separa{
+    border-left: 2px solid #FFF;
+  }
 }
 
 @media(max-width: 768px){
   #sobre-foto {
     width: 100%;
   }
-  
+
   #sobre-img {
     padding-bottom: 40%
   }
+
+  #footer-left{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  } 
+
+  .separa{
+    padding-top: 20px;
+    border-top: 2px solid #FFF;
+  }
+  
 }
 
 @media(min-width: 1024px){
@@ -61,7 +76,4 @@
     margin-bottom: 3%;
   }
 
-  .separa{
-    border-left: 2px solid #FFF;
-  }
 }

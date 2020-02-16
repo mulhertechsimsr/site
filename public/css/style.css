@@ -258,27 +258,29 @@ footer{
 
 
 #realizacao-logo {
-  height: 150px;
-  margin-right: 20px;
-  float:left;
+  width: 150px;
+  margin: 20px 0;
 }
 
 #realizacao {
   display: flex;
-  flex-direction: column;
-  height: 160px;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-align: center;
 }
 
 #realizacao-texto {
   background: transparent;
-  float: left;
+  flex: 1;
 }
 
 #realizacao-titulo, #realizacao-wtm{
-  color: #FFF; 
-  background: none; 
-  margin-left: 2%;
+  color: #FFF;
+  background: none;
+  margin: 0;
+  text-align: center;
 }
 
 .titulo {
@@ -289,8 +291,9 @@ footer{
 
 
 #redes {
-  width: 100%;
   margin: 0;
+  flex: 1;
+  text-align: center;
 }
 
 .redes{
