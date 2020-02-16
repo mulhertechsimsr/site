@@ -13,8 +13,9 @@ body{
   background-size: 32%;
 }
 
-.container{
+#content{
   display: grid;
+  width: 100%;
  }
 
 a{
@@ -31,7 +32,7 @@ ul{
   margin-bottom: 10%;
 }
 
-#content, #saturno {
+#saturno {
   margin: 0 3%; 
   padding: 0 3%; 
   position: relative;

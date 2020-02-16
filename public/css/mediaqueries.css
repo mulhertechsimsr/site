@@ -1,9 +1,3 @@
-@media(min-width: 768px){
-  .separa{
-    border-left: 2px solid #FFF;
-  }
-}
-
 @media(max-width: 768px){
   #sobre-foto {
     width: 100%;
@@ -36,7 +30,7 @@
   
 }
 
-@media(min-width: 1024px){
+@media(min-width: 768px){
   #astronauta {
     display: block
   }
@@ -84,5 +78,8 @@
   .btn{
     margin-bottom: 3%;
   }
-
+  
+  .separa{
+    border-left: 2px solid #FFF;
+  }
 }
