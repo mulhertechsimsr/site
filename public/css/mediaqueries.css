@@ -1,3 +1,17 @@
+@media(min-width: 768px){
+
+}
+
+@media(max-width: 768px){
+  #sobre-foto {
+    width: 100%;
+  }
+  
+  #sobre-img {
+    padding-bottom: 40%
+  }
+}
+
 @media(min-width: 1024px){
   #astronauta {
     display: block

@@ -193,6 +193,8 @@ p{
   color: rgb(0, 153, 153);
 }
 
+
+
 #sobre-foto {
   width: 90%;
   position: relative;
@@ -203,8 +205,12 @@ p{
   max-width: 100%;
 }
 
+#grupo {
+  position: relative;
+
+}
 #forma {
-    left: -20%;
+    left: -13%;
     top: 3%;
 }
 
@@ -318,7 +324,6 @@ input#email {
 
 /*ANOS ANTERIORES*/
 #edicoes_anteriores { 
-  padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
   margin-top: 10%;
