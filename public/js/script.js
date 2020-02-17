@@ -18,7 +18,7 @@ const setupMenu = () => {
   $('nav a').click( (e) => {
     e.preventDefault();
     var id = $(e.target).attr('href');
-    console.log("id", id);
+    $(".menu").hide();
 
     if(id) {
       targetOffset = $(id).offset().top;
