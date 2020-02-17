@@ -30,8 +30,8 @@
 }
 
 .hvr-hang-estrela:nth-child(3) {
-  top: 410px;
-  right: 250px;
+  top: 430px;
+  right: 350px;
 }
 
 @-webkit-keyframes hvr-hang {
