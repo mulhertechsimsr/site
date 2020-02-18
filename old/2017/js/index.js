@@ -1,35 +1,35 @@
-jQuery(document).ready(function() {
+$(document).ready(function() {
 
-    jQuery('#contact-form').parsley();
+    $('#contact-form').parsley();
 
     // navigation click actions 
-    jQuery('.scroll-link').on('click', function(event) {
+    $('.scroll-link').on('click', function(event) {
         event.preventDefault();
-        var sectionID = jQuery(this).attr("data-id");
+        var sectionID = $(this).attr("data-id");
         scrollToID('#' + sectionID, 750);
     });
 
     function scrollToID(id, speed) {
         var offSet = 100;
-        var targetOffset = jQuery(id).offset().top - offSet;
-        var mainNav = jQuery('#main-nav');
-        jQuery('html,body').animate({scrollTop: targetOffset}, speed);
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop: targetOffset}, speed);
         if (mainNav.hasClass("open")) {
             mainNav.css("height", "1px").removeClass("in").addClass("collapse");
             mainNav.removeClass("open");
         }
     }
         
-    wrapper = jQuery(".tabs");
+    wrapper = $(".tabs");
     tabs = wrapper.find(".tab");
     tabToggle = wrapper.find(".tab-toggle");
 
     function openTab() {
-        var content = jQuery(this).parent().next(".content"),
+        var content = $(this).parent().next(".content"),
         activeItems = wrapper.find(".active");
 
-        if (!jQuery(this).hasClass('active')) {
-            jQuery(this).add(content).add(activeItems).toggleClass('active');
+        if (!$(this).hasClass('active')) {
+            $(this).add(content).add(activeItems).toggleClass('active');
             wrapper.css('min-height', content.outerHeight());
         }
     };
