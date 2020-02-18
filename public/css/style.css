@@ -165,15 +165,24 @@ section#inicial .row {
 }
 
 .marco{
-  background: #FFF; 
-  font-size: 150%; 
-  margin-bottom: 40px;
+  background: #FFF;
+  font-size: 150%;
+  margin-bottom: 10px;
  }
 
 .iesp{
- background: #FFF; 
- color: rgb(204, 0, 102); 
- font-size: 100%;
+ background: #FFF;
+ color: rgb(204, 0, 102);
+ font-size: 124%;
+ display: inline-block;
+ width: 100%;
+ margin-bottom: 15px;
+}
+
+.iesp:hover {
+  text-decoration: none;
+  color: rgb(173, 4, 88);
+  transition: all .5s; 
 }
 
 .texto-encontro{
