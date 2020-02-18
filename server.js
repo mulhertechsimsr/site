@@ -19,4 +19,4 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/old'));
 
 var fs = require('fs');
-global.content = JSON.parse(fs.readFileSync('content.json', 'utf8'));
+global.content = JSON.parse(fs.readFileSync(__dirname + '/content.json', 'utf8'));
