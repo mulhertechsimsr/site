@@ -395,11 +395,11 @@ section#parceiros, section#palestrante{
 }
 
 .palestra{
-  float: left;
-  align-content: center; 
-  position: relative;
-  
+  width: 15%;
+  margin: 3%; 
 }
 .fotos{
-  width: 30%;
+  width: 10%;
+  margin: 3%;
+  background-color: #FFF;
 }
