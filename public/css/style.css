@@ -197,7 +197,8 @@ section#inicial .row {
 
 #sobre .titulo, 
 #parceiros .titulo, 
-#palestrantes .titulo{
+#palestrantes .titulo,
+#combo .titulo{
   font-size: 150%; 
   font-weight: bold; 
   background: #FFF; 
@@ -481,4 +482,23 @@ section#parceiros, section#palestrantes{
 
 .count-down-number{
   color: rgb(204, 0, 102);
+}
+
+/* Combo */
+#combo-items {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 150%;
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(204, 0, 102);
+  background-color: #fff;
+}
+
+.combo-item {
+  margin: 5%;
 }
