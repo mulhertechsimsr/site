@@ -468,7 +468,7 @@ section#parceiros, section#palestrantes{
 }
 
 /* Contador */
-#count-down {
+#count-down-parts {
   width: 80%;
   margin: 0 auto;
   display: flex;
