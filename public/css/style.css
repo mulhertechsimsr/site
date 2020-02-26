@@ -399,7 +399,7 @@ input#email {
 }
 
 /* Parceiros*/
-section#parceiros, section#palestrante{
+section#parceiros, section#palestrantes{
   height: 100%;
   min-height: fit-content;
 }
