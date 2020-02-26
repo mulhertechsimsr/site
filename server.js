@@ -16,7 +16,8 @@ app.get('/', (req, res) => {
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/old'));
+
+app.use(express.static(__dirname + '/past_years'));
 
 var fs = require('fs');
 global.content = JSON.parse(fs.readFileSync(__dirname + '/content.json', 'utf8'));

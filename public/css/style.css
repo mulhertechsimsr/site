@@ -262,25 +262,35 @@ section#inicial .row {
   padding-bottom: 20px;
   background-color: #fff;
   margin-top: 10%;
+  font-size: 140%;
 }
 
-.centraliza{
-  font-size: 140%;
-  color: rgb(204, 0, 102);
+#edicoes_anteriores p,
+#edicoes_anteriores span,
+#edicoes_anteriores a{
+  width: 100%;
   position: left;
   text-align: center;
-  width: 100%;
-  line-height: 0.8;
   font-weight: bold;
 }
 
-.anos{
-  font-size: 95%;
+#edicoes_anteriores p {
+  line-height: 0.8;
+  color: rgb(204, 0, 102);
+}
+
+
+#edicoes_anteriores span,
+#edicoes_anteriores a {
   color: rgb(0, 153, 153);
-  font-weight: bold;
+}
+
+#edicoes_anteriores a {
+  font-size: 95%;
   line-height: 1.333;
   margin: .5%;
 }
+
 
 /*Rodape*/
 #saturno {
