@@ -2,8 +2,9 @@
     p.titulo PALESTRANTES
     div#palestrantes-lista
       each atividade in content.programacao
+        - foto = "/img/palestrantes/" + atividade.foto
         p.palestrante
-          img.palestrante-foto(src="img/palestrantes/" + atividade.foto, alt="")
+          img.palestrante-foto(src=foto)
           span.palestrante-nome=atividade.palestrante
 
 

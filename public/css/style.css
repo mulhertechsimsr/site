@@ -1,4 +1,4 @@
-*{
+  *{
   margin: 0;
   padding: 0; 
   font-size: 100%; 
@@ -411,13 +411,34 @@ input#email {
 }
 
 .palestrante {
-  width: 15%;
-  margin: 0 5%;
-  text-align: center;
+   width: 200px;
+  height: 200px;
+    margin: 0 5%;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.palestrante::before {
+  content: "";
+  width: 170px;
+  height: 170px;
+  background-color: #059E8F;
+  opacity: 0.5;
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 14px;
 }
 
 .palestrante-foto{
-  width: 100%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
 }
 
 .palestrante-nome{
