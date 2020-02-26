@@ -1,8 +1,7 @@
 .row
-  .parceiro
-    p PARCEIROS
-    img.fotos(src="img/patrocinador/indra.png", alt="")
-    img.fotos(src="img/patrocinador/vsoft.png", alt="")
-    img.fotos(src="img/patrocinador/conductor.png", alt="")
+  p.titulo PARCEIROS
+  div#parceiros-logos
+    each patrocinador in content.patrocinadores
+      img.parceiros-logo(src="img/patrocinadores/" + patrocinador.logo, alt=patrocinador.nome)
 
 

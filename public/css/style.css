@@ -195,17 +195,19 @@ section#inicial .row {
 
 /*SOBRE O EVENTO*/
 
-.sobre, .parceiro, .palestrante{
+#sobre .titulo, 
+#parceiros .titulo, 
+#palestrantes .titulo{
   font-size: 150%; 
   font-weight: bold; 
   background: #FFF; 
   text-align: center; 
   position: relative;
   color: rgb(0, 153, 153); 
-  float: left; width: 100%; 
+  width: 100%; 
 }
 
-.sobre::after {
+#sobre .titulo::after {
   content: "";
   background-image: url("../img/cometa.png");
   background-size: contain;
@@ -398,18 +400,48 @@ input#email {
   border: none;
 }
 
+/* Palestrantes */
+
+#palestrantes-lista {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.palestrante {
+  width: 15%;
+  margin: 0 5%;
+  text-align: center;
+}
+
+.palestrante-foto{
+  width: 100%;
+}
+
+.palestrante-nome{
+  font-size: 150%;
+}
+
 /* Parceiros*/
 section#parceiros, section#palestrantes{
   height: 100%;
   min-height: fit-content;
 }
 
-.palestra{
-  width: 15%;
-  margin: 3%; 
+#parceiros .row {
+  text-align: center;
+  position: relative;
 }
-.fotos{
+
+#parceiros-logos {
+  background: #fff
+}
+
+.parceiros-logo{
   width: 10%;
   margin: 3%;
   background-color: #FFF;
+  text-align: center;
 }

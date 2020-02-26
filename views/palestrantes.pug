@@ -1,14 +1,11 @@
 .row
-  .palestrante 
-    p PALESTRANTES
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
-    img.palestra(src="img/palestra/circulo-preto.png", alt="")
+    p.titulo PALESTRANTES
+    div#palestrantes-lista
+      each atividade in content.programacao
+        p.palestrante
+          img.palestrante-foto(src="img/palestrantes/" + atividade.foto, alt="")
+          span.palestrante-nome=atividade.palestrante
+
 
 
     
