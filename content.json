@@ -3,23 +3,109 @@
     "texto": "O Mulher Tech Sim Senhor é um grande encontro das mulheres de TI da Paraíba, promovido anualmente pelo Women Techmakers JP, um programa de alcance global do Google. <br><br>Realizado desde 2016, o evento oferece à comunidade palestras, mini-cursos e mesas redondas, com discussão não apenas de conteúdos técnicos, mas também de assuntos como diversidade, igualdade de gênero e mercado de trabalho."},
   "programacao": [
     {
-        "palestrante": "Thays Silva",
-        "foto": "thays.jpg",
+        "palestrante": "Giulia",
+        "foto": "giulia.png",
         "contato": {
             "twitter": "",
-            "github": "thaysfsil",
-            "linkedin": "thays-silva-97987641"
+            "github": "",
+            "linkedin": ""
         },
-        "titulo": "Python no Titanic",
-        "hora": "10:20 - 11:10",
-        "descricao": "Machine learning para meros mortais: uma introdução básica de conceitos de aprendizagem de máquina com python"
+        "titulo": "",
+        "hora": "",
+        "descricao": ""
+    },    
+    {
+        "palestrante": "Anicely",
+        "foto": "anicely.png",
+        "contato": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "titulo": "",
+        "hora": "",
+        "descricao": ""
+    },    
+    {
+        "palestrante": "Juliana",
+        "foto": "juliana.png",
+        "contato": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "titulo": "",
+        "hora": "",
+        "descricao": ""
+    },    
+    {
+        "palestrante": "Fulana",
+        "foto": "fulana.png",
+        "contato": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "titulo": "",
+        "hora": "",
+        "descricao": ""
+    },    
+    {
+        "palestrante": "Beltrana",
+        "foto": "beltrana.png",
+        "contato": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "titulo": "",
+        "hora": "",
+        "descricao": ""
+    },    
+    {
+        "palestrante": "Sicrana",
+        "foto": "sicrana.png",
+        "contato": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "titulo": "",
+        "hora": "",
+        "descricao": ""
     }
   ],
-  "patrocinadoras": [
+  "patrocinadores": [
     {
       "nome": "VSoft",
       "tipo": "ouro",
-      "logo": "vsoft.png"
+      "logo": "vsoft-logo-cor.png"
+    },
+    {
+      "nome": "Indra",
+      "tipo": "ouro",
+      "logo": "indra-logo-cor.png"
+    },
+    {
+      "nome": "Conductor",
+      "tipo": "ouro",
+      "logo": "conductor-logo-cor.svg"
+    },
+    {
+      "nome": "ServiceNet",
+      "tipo": "ouro",
+      "logo": "servicenet-logo-cor.png"
+    },
+    {
+      "nome": "Phoebus",
+      "tipo": "ouro",
+      "logo": "phoebus-logo-cor.png"
+    },
+    {
+      "nome": "Lance Hotéis",
+      "tipo": "ouro",
+      "logo": "lancehoteis-logo-cor.png"
     }
+
   ]
 }
