@@ -466,3 +466,19 @@ section#parceiros, section#palestrantes{
   background-color: #FFF;
   text-align: center;
 }
+
+/* Contador */
+#count-down {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 140%;
+  color: rgb(0, 153, 153);
+  background-color: #fff;
+}
+
+.count-down-number{
+  color: rgb(204, 0, 102);
+}
