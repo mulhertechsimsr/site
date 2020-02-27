@@ -452,20 +452,27 @@ section#parceiros, section#palestrantes{
   min-height: fit-content;
 }
 
-#parceiros .row {
+#parceiros > .row {
   text-align: center;
   position: relative;
 }
 
-#parceiros-logos {
-  background: #fff
+.parceiros-logos {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .parceiros-logo{
-  width: 10%;
-  margin: 3%;
+  width: 8%;
+  min-width: 100px;
+  margin: 1%;
   background-color: #FFF;
   text-align: center;
+  align-self: center;
 }
 
 /* Contador */

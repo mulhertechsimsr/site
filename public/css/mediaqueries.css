@@ -46,6 +46,15 @@
     top: -100px;
     right: -10px;
   }
+
+  .parceiros-logo{
+    width: 20%;
+    min-width: 100px;
+    margin: 5%;
+    background-color: #FFF;
+    text-align: center;
+    align-self: center;
+  }
   
 }
 
@@ -101,4 +110,5 @@
   .separa{
     border-left: 2px solid #FFF;
   }
+  
 }

@@ -75,6 +75,12 @@
         "descricao": ""
     }
   ],
+  "apoiadores": [
+    {
+      "nome": "Alura",
+      "logo": "alura-logo-cor.svg"
+    }
+  ],
   "patrocinadores": [
     {
       "nome": "VSoft",

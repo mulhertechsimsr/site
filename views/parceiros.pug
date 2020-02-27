@@ -1,7 +1,11 @@
 .row
-  p.titulo PARCEIROS
-  div#parceiros-logos
+  p.titulo PATROCÍNIO
+  div.parceiros-logos
     each patrocinador in content.patrocinadores
       img.parceiros-logo(src="img/patrocinadores/" + patrocinador.logo, alt=patrocinador.nome)
+  p.titulo APOIO
+  div.parceiros-logos
+    each apoiador in content.apoiadores
+      img.parceiros-logo(src="img/patrocinadores/" + apoiador.logo, alt=apoiador.nome)
 
 
