@@ -2,21 +2,14 @@ const axios = require('axios');
 const querystring = require('querystring');
 
 
-global.api_key = "H3VFT5EEX6UMNPUZIY"
-global.redirect_uri = "https://testando-lojinha-2020.herokuapp.com/encomendas"
-
 module.exports.getUserToken = async (code) => { 
-
-    const client_secret = "Q24MSHCTDXU6KF46X2SQOD6S4QQV2IZEW3PSIOEN55VJNRCV3K";
-  
-  
     const headers = {'Content-Type': 'application/x-www-form-urlencoded'};
     const params = {
       grant_type: "authorization_code",
-      client_id: api_key,
-      client_secret: client_secret,
+      client_id:  process.env.api_key,
+      client_secret:  process.env.client_secret,
       code: code,
-      redirect_uri: redirect_uri
+      redirect_uri:  process.env.redirect_uri
     }
 
     const http = axios.create({

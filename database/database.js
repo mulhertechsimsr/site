@@ -2,11 +2,11 @@ var mysql = require('mysql');
 
 var pool = mysql.createPool({
     connectionLimit    : 20,
-    host               : 'mysql669.umbler.com',
-    port               : 41890,
-    user               : '3nc0m3nd45',
-    password           : 'd#3SA_2dv4.G7u2',
-    database           : 'encomendas',
+    host               : process.env.db_host,
+    port               : process.env.db_port,
+    user               : process.env.db_user,
+    password           : process.env.db_pass,
+    database           : process.env.db_name,
     multipleStatements : true
 });
 

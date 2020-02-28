@@ -1,4 +1,4 @@
-  const express = require('express');
+const express = require('express');
 const app = express();
 const path = require('path');
 const eventbrite = require('./api/eventbrite');
@@ -11,7 +11,7 @@ var session = require('express-session');
 app.use(cookieParser());
 app.use(session({
     name: 'session',
-    secret: 'max',
+    secret:  process.env.session_secret,
     saveUninitialized: true,
     resave: true,
     httpOnly: true
