@@ -1,14 +1,15 @@
 let menuHeight;
 
 const sizes = () => {
-    menuHeight = byId("menu").offsetHeight;
-    var pageHeight = window.innerHeight ;
-    
-    var inicial = byId("inicial");
-    inicial.style.height = "";
-    inicial.style.minHeight = (pageHeight) + "px"; 
-    inicial.style.paddingTop = menuHeight + "px";
 
+      menuHeight = byId("menu").offsetHeight;
+      var pageHeight = window.innerHeight ;
+      
+      var inicial = byId("inicial");
+      inicial.style.height = "";
+      inicial.style.minHeight = (pageHeight) + "px"; 
+      inicial.style.paddingTop = menuHeight + "px";
+    
 }
 
 const setupMenu = () => {
@@ -59,10 +60,47 @@ const countDown = () => {
 }, 1000);
 }
 
+const configLojinha = () => {
+  const unselected = "btn-outline-secondary";
+  const selected = "btn-success";
+  $("#lojinha #items .item").click((e) => { 
+    const btn = $(e.currentTarget);
+
+
+    if(btn.hasClass(unselected)){
+      btn.removeClass(unselected); 
+      btn.addClass(selected);
+      btn.attr("item-selected", "true");
+    } else {
+      btn.removeClass(selected); 
+      btn.addClass(unselected);
+      btn.attr("item-selected", "false");
+    } 
+  });
+
+  $("#finalizar").on("click", (e) => {
+    const selected = $("[item-selected = true]");
+    const ids = [];
+    selected.each( (i, item) => { 
+      console.log(i,item, item.id); 
+      ids.push(item.id);
+    });
+
+    const items = ids.join(",");
+
+    window.location = "http://1cd9c1a9.ngrok.io/encomendas?items=" + items;
+  })
+
+}
+
 window.addEventListener("load", () => {
-  setupMenu();
-  sizes();
-  countDown();
+  if(byId("menu")){
+    setupMenu();
+    sizes();
+    countDown();
+  } else {
+    configLojinha()
+  }
 });
 
 window.addEventListener("resize", sizes);

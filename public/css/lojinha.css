@@ -1,0 +1,99 @@
+html, body, main {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  padding: 20px;
+  font-size: 24pt;
+  margin: 0;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  background: #fff
+}
+
+#lojinha {
+ width: 100%;
+height: calc(100% - 40px - 30pt);
+ overflow: hidden;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+#lojinha #items {
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#lojinha #items .item {
+  width: 22%;
+  margin: 1.5%;
+  align-self: flex-start;
+  text-align: center;
+}
+
+#lojinha #items .item.btn {
+  background-color: #fff
+}
+
+#lojinha #items .item.btn-success {
+    color: #fff;
+    background-color: #56CC9D;
+}
+
+#lojinha #items .item.btn-outline-secondary:hover{
+  color: #F3969A;
+  background-color: #fff;
+  border-color: #F3969A;=
+}
+
+#lojinha #items .item.btn-outline-secondary:hover,
+#lojinha #items .item.btn-success:hover {
+  transform: scale(1.1);
+}
+
+
+.btn{
+  margin-bottom: auto;
+}
+
+#lojinha #items .item p {
+  font-weight: bold;
+  font-size: 150%;
+  background: none;
+}
+
+#lojinha #items .item .foto {
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+#lojinha #acoes {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+#lojinha #acoes div {
+  padding: 20px;
+  margin: 10px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#lojinha #erro {
+  font-size: 150%;
+}

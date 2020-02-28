@@ -1,0 +1,19 @@
+extends template
+block content
+  script(src="bootstrap/js/bootstrap.min.js")
+  link(rel='stylesheet', href='css/lojinha.css')
+  h2.titulo ENCOMENDAS LOJINHA
+  #lojinha
+    #items
+      each item in lojinha.items
+        - foto = "/img/lojinha/" + item.foto
+        .item.btn.btn-outline-secondary(id=item.id)
+          p=item.nome
+          p="R$ " + item.preco.toFixed(2).toString().replace('.', ',')
+          p.foto(style="background-image: url("+foto+")")
+    #acoes
+      #finalizar.btn.btn-outline-info salvar
+      #cancelar.btn.btn-outline-info cancelar
+      #ver.btn.btn-outline-info ver
+
+
