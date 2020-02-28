@@ -88,7 +88,7 @@ const configLojinha = () => {
 
     const items = ids.join(",");
 
-    window.location = "http://1cd9c1a9.ngrok.io/encomendas?items=" + items;
+    window.location = "/encomendas?items=" + items;
   })
 
 }
