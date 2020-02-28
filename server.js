@@ -32,7 +32,9 @@ app.get('/', (req, res) => {
 app.get('/encomendas', async (req,res) => {
 
   const user = req.session.user;
-  const code = req.query && req.query.code ? req.query.code : false;
+  const userIsAttending = req.session.userIsAttending;
+
+  const code = req.query && req.query.code ? req.query.code : true;
   const items = req.query && req.query.items? req.query.items : false;
   
   if(!user && code) {
@@ -43,13 +45,18 @@ app.get('/encomendas', async (req,res) => {
 
     saveItems(req, res, items);
     
-  } else if(user) {
+  } else if(user && userIsAttending) {
 
     res.render('./encomendas', {
       title: 'Lojinha',
       authUrl: eventbrite.authUrl 
     });
 
+  } else if(user) {
+    res.render('./encomendas-inscrevase', {
+        title: 'Lojinha',
+        authUrl: eventbrite.authUrl
+      });
   } else {
 
     res.render('./encomendas-login', {
@@ -63,20 +70,23 @@ app.get('/encomendas', async (req,res) => {
 
 const authenticate = async (req,res, code) => {
 
-  console.log(code);
-
-  // const token = "P3T6ZVHAHKRZDR2RSWIB";
-  // const id = "163390035792";
-  
   const id = await eventbrite.getUserToken(code)
-  .then(eventbrite.getUserId)
-  .then( id => {
+  .then(eventbrite.getUser)
+  .then( user => {
+    req.session.user = user.id; 
+    req.session.userIsAttending = user.isAttending; 
 
-    req.session.user = id; 
-    res.render('./encomendas', {
-      title: 'Lojinha',
-      authUrl: eventbrite.authUrl 
-    });
+    if(req.session.userIsAttending) {
+      res.render('./encomendas', {
+        title: 'Lojinha',
+        authUrl: eventbrite.authUrl
+      });
+    } else {
+      res.render('./encomendas-inscrevase', {
+        title: 'Lojinha',
+        authUrl: eventbrite.authUrl
+      });
+    }
 
   })
   .catch(e => {

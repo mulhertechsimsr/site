@@ -1,9 +1,10 @@
 const axios = require('axios');
 const querystring = require('querystring');
 
-module.exports.authUrl = `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${process.env.api_key}&redirect_uri=${process.env.redirect_uri}`
+const authUrl = `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${process.env.api_key}&redirect_uri=${process.env.redirect_uri}`
 
-module.exports.getUserToken = async (code) => { 
+
+const getUserToken = async (code) => { 
     const headers = {'Content-Type': 'application/x-www-form-urlencoded'};
     const params = {
       grant_type: "authorization_code",
@@ -29,20 +30,48 @@ module.exports.getUserToken = async (code) => {
     }
 
 }
+const base_url = "https://www.eventbriteapi.com/v3";
 
 
-module.exports.getUserId = async (token) => { 
-  const base_url = "https://www.eventbriteapi.com/v3";
-  const endpoint = "/users/me/";
-  const params = { token };
+const userIsAttending = async (email) => {
+   const http = axios.create({
+      baseURL: base_url,
+      timeout: 2000,
+      headers: {'Authorization': 'Bearer ' + process.env.api_key }
+  });
 
-  try{
-    const result = await axios.get(base_url + endpoint, { params });
-    const user = result.data;
+  const endpoint = "/events/" + process.env.event_id + "/orders/";
 
-    return user.id
+  const params = { status: "active", only_emails: email };
+
+  try {
+    const result = await http.get(base_url + endpoint , { params });
+    const { orders } = result.data; 
+    return orders.length > 0;
   } catch (e) {
-    throw e.response.data;
+    console.log(e);
+    return false
   }
+}
+
+const getUser = async (token) => { 
+    const params = { token };
+
+    try{
+      const endpoint = "/users/me/";
+      const result = await axios.get(base_url + endpoint, { params });
+      const user = result.data;
+
+      const userEmail = user.emails[0].email;
+
+      const isAttending = await userIsAttending(userEmail);
+      
+      return { id: user.id, isAttending }
+
+    } catch (e) {
+      throw e.response.data;
+    }
 
 }
+
+module.exports = { authUrl, getUserToken, userIsAttending, getUser }
