@@ -1,6 +1,7 @@
 const axios = require('axios');
 const querystring = require('querystring');
 
+module.exports.authUrl = `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${process.env.api_key}&redirect_uri=${process.env.redirect_uri}`
 
 module.exports.getUserToken = async (code) => { 
     const headers = {'Content-Type': 'application/x-www-form-urlencoded'};

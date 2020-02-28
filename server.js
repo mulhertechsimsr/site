@@ -47,14 +47,14 @@ app.get('/encomendas', async (req,res) => {
 
     res.render('./encomendas', {
       title: 'Lojinha',
-      authUrl: `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${api_key}&redirect_uri=${redirect_uri}`
+      authUrl: eventbrite.authUrl 
     });
 
   } else {
 
     res.render('./encomendas-login', {
       title: 'Lojinha',
-      authUrl: `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${api_key}&redirect_uri=${redirect_uri}`
+      authUrl: eventbrite.authUrl
     });
   }
 
@@ -75,14 +75,14 @@ const authenticate = async (req,res, code) => {
     req.session.user = id; 
     res.render('./encomendas', {
       title: 'Lojinha',
-      authUrl: `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${api_key}&redirect_uri=${redirect_uri}`
+      authUrl: eventbrite.authUrl 
     });
 
   })
   .catch(e => {
     res.render('./encomendas-erro', {
       title: 'Lojinha',
-      authUrl: `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${api_key}&redirect_uri=${redirect_uri}`
+      authUrl: eventbrite.authUrl
     });
     console.log("error", e)
   })
@@ -97,7 +97,7 @@ const saveItems = (req,res,items) => {
 
       res.render('./encomendas', {
         title: 'Lojinha',
-        authUrl: `https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=${api_key}&redirect_uri=${redirect_uri}`
+        authUrl: eventbrite.authUrl 
       });
       
     })
