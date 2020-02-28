@@ -34,6 +34,7 @@ height: calc(100% - 40px - 30pt);
 
 #lojinha #items .item {
   width: 22%;
+  min-width: 200px;
   margin: 1.5%;
   align-self: flex-start;
   text-align: center;
