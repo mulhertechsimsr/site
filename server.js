@@ -34,7 +34,7 @@ app.get('/encomendas', async (req,res) => {
   const user = req.session.user;
   const userIsAttending = req.session.userIsAttending;
 
-  const code = req.query && req.query.code ? req.query.code : true;
+  const code = req.query && req.query.code ? req.query.code : false;
   const items = req.query && req.query.items? req.query.items : false;
   
   if(!user && code) {
