@@ -3,7 +3,7 @@ const querystring = require('querystring');
 
 
 global.api_key = "H3VFT5EEX6UMNPUZIY"
-global.redirect_uri = "http://1cd9c1a9.ngrok.io/encomendas"
+global.redirect_uri = "https://testando-lojinha-2020.herokuapp.com/encomendas"
 
 module.exports.getUserToken = async (code) => { 
 
