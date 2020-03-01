@@ -60,14 +60,14 @@
   #estrela-1{
     top: -20px;
     position: relative;
-    width: 50%;
+    width: 80%;
   }
   
   #planeta-laranja{
     top: -20px;
     position: relative;
-    width: 50%;
-    left: 83%;
+    width: 80%;
+    left: 50%;
   }
   #sobre .titulo::after {
     margin-top: 10%;
@@ -133,13 +133,13 @@
   #estrela-1{
     top: -50px;
     position: relative;
-    width: 30%;
+    width: 40%;
   }
   
   #planeta-laranja{
     top: -55px;
     position: relative;
-    width: 30%;
+    width: 40%;
     left: 83%;
   }
 }
