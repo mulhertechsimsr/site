@@ -2,10 +2,13 @@ doctype html
 html
   head
     title #{title}
+
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css", id="bootstrap-css")
     link(rel='stylesheet', href='bootstrap/bootstrap.min.css')
     link(rel='stylesheet', href='css/style.css')
     link(rel='stylesheet', href='css/animation.css')
     link(rel='stylesheet', href='css/mediaqueries.css')
+    link(rel='stylesheet', href='css/programacao.css')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato&display=swap")
@@ -14,6 +17,8 @@ html
     script(src='js/jquery.js')
     script(src='js/utils.js')
     script(src='js/script.js')
+    script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
   body
     main
       block content
