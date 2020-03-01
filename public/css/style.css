@@ -42,9 +42,6 @@ img{
   max-width: 100%;
 }
 
-p{
-  background: #FFF;
-}
 
 .row{
     padding: 3%;
@@ -198,7 +195,9 @@ section#inicial .row {
 #sobre .titulo, 
 #parceiros .titulo, 
 #palestrantes .titulo,
-#combo .titulo{
+#combo .titulo,
+#programacao .titulo
+{
   font-size: 150%; 
   font-weight: bold; 
   background: #FFF; 
@@ -207,6 +206,8 @@ section#inicial .row {
   color: rgb(0, 153, 153); 
   width: 100%; 
 }
+
+
 
 #sobre .titulo::after {
   content: "";
@@ -476,20 +477,45 @@ section#parceiros, section#palestrantes{
 }
 
 /* Contador */
+
+#countdown .row{
+  background-color: #cccc33;
+}
+
+#countdown .titulo{
+  font-size: 150%; 
+  text-align: center;
+  width: 100%; 
+  color: #cc0066;
+  font-family: "Lato";
+  font-weight: bold;
+}
+
 #count-down-parts {
   width: 80%;
-  margin: 0 auto;
+  margin: 5px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-size: 140%;
-  color: rgb(0, 153, 153);
-  background-color: #fff;
+  color: #414141;
+}
+
+.count-down-number-day,
+.count-down-number {
+  font-size: 200%;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .count-down-number{
-  color: rgb(204, 0, 102);
+  color: #ffffff;
 }
+
+.count-down-number-day{
+  color:#cc0066;
+}
+
 
 /* Combo */
 #combo-items {
@@ -509,3 +535,4 @@ section#parceiros, section#palestrantes{
 .combo-item {
   margin: 5%;
 }
+

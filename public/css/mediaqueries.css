@@ -55,6 +55,20 @@
     text-align: center;
     align-self: center;
   }
+
+
+  #estrela-1{
+    top: -20px;
+    position: relative;
+    width: 50%;
+  }
+  
+  #planeta-laranja{
+    top: -20px;
+    position: relative;
+    width: 50%;
+    left: 83%;
+  }
   
 }
 
@@ -111,4 +125,18 @@
     border-left: 2px solid #FFF;
   }
   
+  
+
+  #estrela-1{
+    top: -50px;
+    position: relative;
+    width: 30%;
+  }
+  
+  #planeta-laranja{
+    top: -55px;
+    position: relative;
+    width: 30%;
+    left: 83%;
+  }
 }
