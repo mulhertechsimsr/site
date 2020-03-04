@@ -1,0 +1,218 @@
+#combo{
+  width: 100%;
+  height: auto;
+  background-color: #009999;
+  margin-bottom: auto;
+}
+
+#titulo-combo{
+  width: 100%;
+  font-size: 153%;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: center; 
+  margin-bottom: 5%;
+}
+
+.cards{
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 660px){
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  #combo{
+    padding-bottom: 200px;
+  }
+
+  .card{
+    display: block;
+    position: relative;
+  }
+
+  .cards > .card{
+    position: absolute;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+
+  .card{
+    position: absolute;
+    width: 285px;
+    height: 329px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .card:nth-child(1){
+    background-image: url("../img/palestras.png");
+    background-repeat: no-repeat;
+    background-position: 50% 10% ;
+
+  }
+
+  .card:nth-child(2) {
+    background-image: url("../img/mimos.png");
+    background-repeat: no-repeat;
+    background-position: 50% 10% ;
+    animation-delay: 2s;
+  }
+  .card:nth-child(3) {
+    animation-delay: 4s;
+    background-repeat: no-repeat;
+    background-position: 50% 10% ;
+    background-image: url("../img/networking.png");
+ 
+  }
+}
+
+@media(min-width: 660px){
+
+  .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card-primeiro, .card-ultimo{
+    position: relative;
+    float: left;
+    width: 285px;
+    height: 329px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  
+  .card-meio{
+    position: relative;
+    top: 1%;
+    float: left;
+    width: 285px;
+    height: 469px;
+    filter: drop-shadow(0 0 15.5px #000000);
+    background-color: #ffffff;
+    z-index: 2;
+    background-image: url("../img/mimos.png");
+    background-repeat: no-repeat;
+    background-position: 50% 10% ;
+  }
+  
+  
+  .card-primeiro{
+    background-image: url("../img/palestras.png");
+    background-repeat: no-repeat;
+    background-position: 50% 20% ;
+  }
+  
+  .card-ultimo{
+    background-image: url("../img/networking.png");
+    background-repeat: no-repeat;
+    background-position: 60% 15% ;
+  }
+}
+
+
+/* 
+#combo{
+    width: 100%;
+    height: auto;
+    background-color: #009999;
+    padding-bottom: 5%;
+  }
+  
+  .cards{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-primeiro, .card-ultimo{
+    position: relative;
+    float: left;
+    width: 285px;
+    height: 429px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  
+  .card-meio{
+    position: relative;
+    top: 1%;
+    float: left;
+    width: 285px;
+    height: 469px;
+    filter: drop-shadow(0 0 15.5px #000000);
+    background-color: #ffffff;
+    z-index: 2;
+    background-image: url("../img/mimos.png");
+    background-repeat: no-repeat;
+    background-position: 50% 10% ;
+  }
+  
+  .card-primeiro{
+    background-image: url("../img/palestras.png");
+    background-repeat: no-repeat;
+    background-position: 50% 20% ;
+  }
+  
+  .card-ultimo{
+    background-image: url("../img/networking.png");
+    background-repeat: no-repeat;
+    background-position: 60% 15% ;
+  }
+  
+  .card-primeiro:hover,
+  .card-meio:hover,
+  .card-ultimo:hover{
+    transform: scale(1.10) translateZ(0);
+  }
+  
+  
+  
+  .titulo-combos{
+    line-height: 40px;
+    color: #cc0066;
+    font-size: 140%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 60%;
+  }
+  
+  .descricao-combo{
+    padding-top: 3%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 20px;
+    color: #cc0066;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  } */
