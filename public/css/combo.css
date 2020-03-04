@@ -66,7 +66,7 @@
 
   .cards > .card{
     position: absolute;
-    left: calc(50% - 285px);
+    left: calc(50% - 135px);
     opacity: 0;
     animation: display 12s infinite;
   }
