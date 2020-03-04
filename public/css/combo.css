@@ -21,6 +21,16 @@
   justify-content: center;
 }
 
+.titulo-combos{
+  line-height: 40px;
+  color: #cc0066;
+  font-size: 140%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 60%;
+}
+
 @media(max-width: 660px){
   @keyframes display {
     0% {
@@ -46,7 +56,7 @@
   }
   
   #combo{
-    padding-bottom: 200px;
+    padding-bottom: 150px;
   }
 
   .card{
@@ -58,13 +68,13 @@
     position: absolute;
     left: calc(50% - 100px);
     opacity: 0;
-    animation: display 10s infinite;
+    animation: display 12s infinite;
   }
 
   .card{
     position: absolute;
     width: 285px;
-    height: 329px;
+    height: 300px;
     background-color: #ffffff;
     z-index: 1;
   }
@@ -80,19 +90,30 @@
     background-image: url("../img/mimos.png");
     background-repeat: no-repeat;
     background-position: 50% 10% ;
-    animation-delay: 2s;
+    animation-delay: 4s;
   }
   .card:nth-child(3) {
-    animation-delay: 4s;
+    animation-delay: 8s;
     background-repeat: no-repeat;
     background-position: 50% 10% ;
     background-image: url("../img/networking.png");
  
   }
+  .estrela-1:nth-child(1){
+   left: 0;
+   width: 10%;
+  }
+  .estrela-1:nth-child(2){
+    display: none;
+  }
 }
 
 @media(min-width: 660px){
 
+  .card{
+    display: none;
+  }
+  
   .cards{
     display: flex;
     flex-direction: row;
