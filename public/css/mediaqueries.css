@@ -80,8 +80,7 @@
   .count-down-number,
   .count-down-number-day {
     font-size: 100%;
-    line-height: 24px;
-    font-weight: bold;
+    text-align: center;
   }
 }
 

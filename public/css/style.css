@@ -207,8 +207,6 @@ section#inicial .row {
   width: 100%; 
 }
 
-
-
 #sobre .titulo::after {
   content: "";
   background-image: url("../img/cometa.png");
@@ -222,7 +220,6 @@ section#inicial .row {
   position: absolute;
   top: -100px;
   right: -10px;
-
 }
 
 .texto-evento{
@@ -261,7 +258,6 @@ section#inicial .row {
   top: -25px;
 }
 
-
 /*ANOS ANTERIORES*/
 #edicoes_anteriores { 
   padding-bottom: 20px;
@@ -296,14 +292,12 @@ section#inicial .row {
   margin: .5%;
 }
 
-
 /*Rodape*/
 #saturno {
   height: 60px;
   margin-bottom: 40px;
   padding: 0 3%; 
   position: relative;
-
 }
 
 .saturno{
@@ -395,7 +389,6 @@ input#email {
   font-size: 14pt;
   padding: 5px;
 }
-
 
 .btn-assinar{
   color: rgb(204, 0, 102); background: #FFF; margin-top: 7%; float: right;
@@ -507,6 +500,8 @@ section#parceiros, section#palestrantes{
   font-size: 200%;
   line-height: 24px;
   font-weight: bold;
+  text-align: center;
+
 }
 
 .count-down-number{
@@ -517,5 +512,3 @@ section#parceiros, section#palestrantes{
   color:#cc0066;
 }
 
-
-/* Combo */
