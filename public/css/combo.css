@@ -56,7 +56,7 @@
   }
   
   #combo{
-    padding-bottom: 150px;
+    padding-bottom: 180px;
   }
 
   .card{
@@ -82,29 +82,32 @@
   .card:nth-child(1){
     background-image: url("../img/palestras.png");
     background-repeat: no-repeat;
-    background-position: 50% 10% ;
+    background-position: 50% 30% ;
 
   }
 
   .card:nth-child(2) {
     background-image: url("../img/mimos.png");
     background-repeat: no-repeat;
-    background-position: 50% 10% ;
+    background-position: 50% 30% ;
     animation-delay: 4s;
   }
   .card:nth-child(3) {
     animation-delay: 8s;
     background-repeat: no-repeat;
-    background-position: 50% 10% ;
+    background-position: 50% 30% ;
     background-image: url("../img/networking.png");
  
   }
   .estrela-1:nth-child(1){
    left: 0;
-   width: 10%;
+   width: 5%;
   }
   .estrela-1:nth-child(2){
-    display: none;
+    position: relative;
+    top: 400px;
+    left: 90%;
+    width: 10%;
   }
 }
 
