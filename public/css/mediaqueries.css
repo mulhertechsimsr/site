@@ -1,4 +1,8 @@
 @media(max-width: 768px){
+  #sobre .titulo::after{
+    background-image: url("");
+  }
+
   #sobre-foto {
     width: 100%;
   }
@@ -73,6 +77,12 @@
     margin-top: 10%;
   }
   
+  .count-down-number,
+  .count-down-number-day {
+    font-size: 100%;
+    line-height: 24px;
+    font-weight: bold;
+  }
 }
 
 @media(min-width: 768px){

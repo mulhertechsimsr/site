@@ -1,9 +1,10 @@
 #combo{
   width: 100%;
   height: auto;
-  background-color: #009999;
+  background-color: #009999;  
   margin-bottom: auto;
 }
+
 
 #titulo-combo{
   width: 100%;
@@ -99,17 +100,16 @@
     background-image: url("../img/networking.png");
  
   }
-  .estrela-1:nth-child(1){
-   left: 0;
-   width: 5%;
-  }
-  .estrela-1:nth-child(2){
-    position: relative;
-    top: 400px;
-    left: 83%;
-    width: 10%;
-  }
+  .estrela-1{
+    width: 8%;
+    left: -500px;
+   }
 
+   .estrela-1:nth-child(2){
+     position: relative;
+     top: 350px;
+     left: 83%;
+   }
   .card-primeiro, .card-ultimo, .card-meio{
     display: none;
   }
@@ -255,66 +255,3 @@
     background-position: 60% 20% ;
   }
 }
-
-
-/* 
-#combo{
-    width: 100%;
-    height: auto;
-    background-color: #009999;
-    padding-bottom: 5%;
-  }
-  
-  .cards{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card-primeiro, .card-ultimo{
-    position: relative;
-    float: left;
-    width: 285px;
-    height: 429px;
-    background-color: #ffffff;
-    z-index: 1;
-  }
-  
-  .card-meio{
-    position: relative;
-    top: 1%;
-    float: left;
-    width: 285px;
-    height: 469px;
-    filter: drop-shadow(0 0 15.5px #000000);
-    background-color: #ffffff;
-    z-index: 2;
-    background-image: url("../img/mimos.png");
-    background-repeat: no-repeat;
-    background-position: 50% 10% ;
-  }
-  
-  .card-primeiro{
-    background-image: url("../img/palestras.png");
-    background-repeat: no-repeat;
-    background-position: 50% 20% ;
-  }
-  
-  .card-ultimo{
-    background-image: url("../img/networking.png");
-    background-repeat: no-repeat;
-    background-position: 60% 15% ;
-  }
-  
-  .card-primeiro:hover,
-  .card-meio:hover,
-  .card-ultimo:hover{
-    transform: scale(1.10) translateZ(0);
-  }
-  
-  
-  
- */

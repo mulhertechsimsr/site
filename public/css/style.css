@@ -213,7 +213,8 @@ section#inicial .row {
   content: "";
   background-image: url("../img/cometa.png");
   background-size: contain;
-  background-position: center;
+  background-position: bottom;
+  background-size: 70%;
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
