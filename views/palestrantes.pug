@@ -1,11 +1,14 @@
 .row
     p.titulo PALESTRANTES
     div#palestrantes-lista
-      each atividade in content.programacao
-        - foto = "/img/palestrantes/" + atividade.foto
-        p.palestrante
-          img.palestrante-foto(src=foto)
-          span.palestrante-nome=atividade.palestrante
+      
+        each atividade in content.programacao
+          a(href="")
+            - foto = "/img/palestrantes/" + atividade.foto
+             .saber-mais SABER MAIS
+            p.palestrante
+              img.palestrante-foto(src=foto)
+              span.palestrante-nome=atividade.palestrante
 
 
 

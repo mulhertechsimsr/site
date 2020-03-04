@@ -404,11 +404,12 @@ input#email {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+ 
 }
 
 .palestrante {
    width: 200px;
-  height: 200px;
+   height: 200px;
     margin: 0 5%;
     text-align: center;
     border-radius: 100%;
@@ -439,6 +440,24 @@ input#email {
 
 .palestrante-nome{
   font-size: 150%;
+}
+
+.saber-mais{
+  font-size: 36px;
+  line-height: 24px;
+  color: #ff4292;
+  font-family: "Lato";
+  font-weight: 900;
+  display: none;
+}
+
+#palestrantes a:hover{
+  text-decoration: none;
+}
+
+#palestrantes a:hover .saber-mais{
+  display: block;
+  text-decoration: none;
 }
 
 /* Parceiros*/
@@ -512,3 +531,10 @@ section#parceiros, section#palestrantes{
   color:#cc0066;
 }
 
+.tempo{
+  font-size: 120%;
+  line-height: 24px;
+  color: #414141;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 707;
+}
