@@ -518,21 +518,91 @@ section#parceiros, section#palestrantes{
 
 
 /* Combo */
-#combo-items {
-  width: 80%;
-  margin: 0 auto;
+
+#combo{
+  width: 100%;
+  height: auto;
+  background-color: #009999;
+  padding-bottom: 5%;
+}
+
+.cards{
+  align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
-  font-size: 150%;
-  font-weight: bolder;
-  font-style: italic;
-  color: rgb(204, 0, 102);
-  background-color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
-.combo-item {
-  margin: 5%;
+.card-primeiro, .card-ultimo{
+  position: relative;
+  float: left;
+  width: 285px;
+  height: 429px;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
+.card-meio{
+  position: relative;
+  top: -2vh;
+  float: left;
+  width: 285px;
+  height: 469px;
+  filter: drop-shadow(0 0 25.5px #000000);
+  background-color: #ffffff;
+  z-index: 2;
+  background-image: url("../img/mimos.png");
+  background-repeat: no-repeat;
+  background-position: 50% 10% ;
+}
+
+.card-primeiro{
+  background-image: url("../img/palestras.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20% ;
+}
+
+.card-ultimo{
+  background-image: url("../img/networking.png");
+  background-repeat: no-repeat;
+  background-position: 60% 15% ;
+}
+
+.card-primeiro:hover,
+.card-meio:hover,
+.card-ultimo:hover{
+  transform: scale(1.10) translateZ(0);
+}
+
+#titulo-combo{
+  width: 100%;
+  font-size: 153%;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: center; 
+  margin-bottom: 5%;
+}
+
+.titulo-combos{
+  line-height: 40px;
+  color: #cc0066;
+  font-size: 140%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 60%;
+}
+
+.descricao-combo{
+  padding-top: 3%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 20px;
+  color: #cc0066;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
