@@ -66,7 +66,7 @@
 
   .cards > .card{
     position: absolute;
-    left: calc(50% - 100px);
+    left: calc(50% - 285px);
     opacity: 0;
     animation: display 12s infinite;
   }
@@ -106,12 +106,21 @@
   .estrela-1:nth-child(2){
     position: relative;
     top: 400px;
-    left: 90%;
+    left: 83%;
     width: 10%;
+  }
+
+  .card-primeiro, .card-ultimo, .card-meio{
+    display: none;
   }
 }
 
 @media(min-width: 660px){
+
+  #combo{
+    height: auto;
+    padding-bottom: 4%;
+  }
 
   .card{
     display: none;
@@ -121,13 +130,100 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+  }
+
+  .card-primeiro, .card-ultimo{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 429px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  
+  .card-meio{
+    position: relative;
+    top: 1%;
+    float: left;
+    width: 200px;
+    height: 469px;
+    filter: drop-shadow(0 0 15.5px #000000);
+    background-color: #ffffff;
+    z-index: 2;
+    background-image: url("../img/mimos.png");
+    background-repeat: no-repeat;
+    background-position: 50% 10% ;
+  }
+  
+  
+  .card-primeiro{
+    background-image: url("../img/palestras.png");
+    background-repeat: no-repeat;
+    background-position: 50% 15% ;
+  }
+  
+  .card-ultimo{
+    background-image: url("../img/networking.png");
+    background-repeat: no-repeat;
+    background-position: 60% 15% ;
+  }
+
+  .titulo-combos{
+    padding-top: 75%;
+  }
+  
+  .descricao-combo{
+    padding-top: 3%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 20px;
+    color: #cc0066;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  } 
+  
+  .card-primeiro:hover,
+  .card-meio:hover,
+  .card-ultimo:hover{
+    transform: scale(1.10) translateZ(0);
+  }
+
+  .estrela-1:nth-child(1){
+    left: 0;
+    width: 5%;
+   }
+   .estrela-1:nth-child(2){
+     position: relative;
+     top: 560px;
+     left: 90%;
+     width: 8%;
+   }
+}
+
+@media(min-width : 900px){
+
+  .estrela-1:nth-child(1){
+    left: 0;
+    width: 5%;
+   }
+
+   .estrela-1:nth-child(2){
+     position: relative;
+     top: 560px;
+     left: 90%;
+     width: 8%;
+   }
+
+   .titulo-combos{
+    padding-top: 75%;
   }
 
   .card-primeiro, .card-ultimo{
     position: relative;
     float: left;
     width: 285px;
-    height: 329px;
+    height: 429px;
     background-color: #ffffff;
     z-index: 1;
   }
@@ -143,7 +239,7 @@
     z-index: 2;
     background-image: url("../img/mimos.png");
     background-repeat: no-repeat;
-    background-position: 50% 10% ;
+    background-position: 50% 15% ;
   }
   
   
@@ -156,7 +252,7 @@
   .card-ultimo{
     background-image: url("../img/networking.png");
     background-repeat: no-repeat;
-    background-position: 60% 15% ;
+    background-position: 60% 20% ;
   }
 }
 
@@ -221,22 +317,4 @@
   
   
   
-  .titulo-combos{
-    line-height: 40px;
-    color: #cc0066;
-    font-size: 140%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    text-align: center;
-    padding-top: 60%;
-  }
-  
-  .descricao-combo{
-    padding-top: 3%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 20px;
-    color: #cc0066;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-  } */
+ */
