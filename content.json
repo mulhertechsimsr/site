@@ -3,6 +3,10 @@
     "texto": "O Mulher Tech Sim Senhor é um grande encontro das mulheres de TI da Paraíba, promovido anualmente pelo Women Techmakers JP, um programa de alcance global do Google. <br><br>Realizado desde 2016, o evento oferece à comunidade palestras, mini-cursos e mesas redondas, com discussão não apenas de conteúdos técnicos, mas também de assuntos como diversidade, igualdade de gênero e mercado de trabalho."},
   "programacao": [
     {
+      "titulo": "Credenciamento",
+      "hora": "08:00"
+    },
+    {
         "palestrante": "Giulia",
         "foto": "giulia.png",
         "contato": {
@@ -10,9 +14,9 @@
             "github": "",
             "linkedin": ""
         },
-        "titulo": "",
-        "hora": "",
-        "descricao": ""
+        "titulo": "Palestra 1",
+        "hora": "09:00",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
     },    
     {
         "palestrante": "Anicely",
@@ -22,9 +26,9 @@
             "github": "",
             "linkedin": ""
         },
-        "titulo": "",
-        "hora": "",
-        "descricao": ""
+        "titulo": "Palestra 2",
+        "hora": "10:00",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
     },    
     {
         "palestrante": "Juliana",
@@ -34,45 +38,52 @@
             "github": "",
             "linkedin": ""
         },
-        "titulo": "",
+        "titulo": "Palestra 3",
         "hora": "",
         "descricao": ""
-    },    
+    },
     {
-        "palestrante": "Fulana",
-        "foto": "fulana.png",
-        "contato": {
-            "twitter": "",
-            "github": "",
-            "linkedin": ""
-        },
-        "titulo": "",
-        "hora": "",
-        "descricao": ""
-    },    
+      "hora": "14:00",
+      "oficinas": [
+        {
+            "palestrante": "Fulana",
+            "foto": "fulana.png",
+            "contato": {
+                "twitter": "",
+                "github": "",
+                "linkedin": ""
+            },
+            "titulo": "Oficina 2",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+        },    
+        {
+            "palestrante": "Beltrana",
+            "foto": "beltrana.png",
+            "contato": {
+                "twitter": "",
+                "github": "",
+                "linkedin": ""
+            },
+            "titulo": "Oficina 2",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+        },    
+        {
+            "palestrante": "Sicrana",
+            "foto": "sicrana.png",
+            "contato": {
+                "twitter": "",
+                "github": "",
+                "linkedin": ""
+            },
+            "titulo": "Oficina 2",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+        
+        }
+      ]
+    },
     {
-        "palestrante": "Beltrana",
-        "foto": "beltrana.png",
-        "contato": {
-            "twitter": "",
-            "github": "",
-            "linkedin": ""
-        },
-        "titulo": "",
-        "hora": "",
-        "descricao": ""
-    },    
-    {
-        "palestrante": "Sicrana",
-        "foto": "sicrana.png",
-        "contato": {
-            "twitter": "",
-            "github": "",
-            "linkedin": ""
-        },
-        "titulo": "",
-        "hora": "",
-        "descricao": ""
+      "titulo": "Encerramento",
+      "hora": "17:00"
     }
   ],
   "apoiadores": [
