@@ -1,9 +1,11 @@
 .circle{
+    font-size: 14pt;
+    line-height: 35pt;
     font-weight: bold;
-    padding: 15px 20px;
+    padding: 10px;
     border-radius: 50%;
     background-color: #cc0066;
-    color:#FFF;
+    color: #FFF;
     z-index: 2;
 }
 
@@ -15,6 +17,37 @@
 
 .atividade.row{
     display: flex; 
+}
+
+.atividade .col-10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.atividade .col-10.text-right {
+align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.atividade .col-10.text-left {
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.atividade .col-10 .col-8.sem-descricao {
+    display: flex;
+}
+
+.atividade .col-10.text-right .col-8.sem-descricao{
+    justify-content: flex-end;
+}
+
+
+
+.titulo-timeline.sem-descricao {
+    align-self: center;
+    margin-bottom: 0;
 }
 
 .atividade.row .col-2{
@@ -96,14 +129,14 @@
     line-height: 24px;
     color: #009999;
     font-family: "Cooper Hewitt";
-    font-weight: 707;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .texto-descricao{
     font-size: 16px;
     line-height: 24px;
-    color: #009999;
+    color: #000;
     font-family: "Cooper Hewitt";
     font-weight: 300;
-    text-align: right;
 }

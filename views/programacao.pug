@@ -4,20 +4,22 @@
         - last = content.programacao.length - 1
         each atividade, i in content.programacao
             - oficinas = atividade.oficinas
+            - classe_titulo = `titulo-timeline` + (atividade.descricao ? "" : " sem-descricao")
+            - col8_titulo = `col-8` + (oficinas || atividade.descricao ? "" : " sem-descricao")
+            - console.log(classe_titulo)
             .row.atividade
                 if(i % 2)
-                    if(oficinas)
-                        each oficina in oficinas
-                            -console.log(oficina)
-                            .col-6
-                              p.titulo-timeline=oficina.titulo
-                              if(oficina.descricao)
-                                p.texto-descricao=oficina.descricao
-                    else
-                        .col-6
-                          p.titulo-timeline=atividade.titulo
-                          if(atividade.descricao)
-                            p.texto-descricao=atividade.descricao
+                    .col-10.text-right
+                        div(class=col8_titulo)
+                            if(oficinas)
+                                each oficina in oficinas
+                                  p.titulo-timeline=oficina.titulo
+                                  if(oficina.descricao)
+                                    p.texto-descricao=oficina.descricao
+                            else
+                              p(class=classe_titulo)=atividade.titulo
+                              if(atividade.descricao)
+                                p.texto-descricao=atividade.descricao
                 else 
                     .col-2.text-center.bottom
                         .circle=atividade.hora
@@ -27,18 +29,18 @@
                    .col-2.text-center.full
                         .circle=atividade.hora
                 else
-                    if(oficinas)
-                        each oficina in oficinas
-                            -console.log(oficina)
-                            .col-6
-                              p.titulo-timeline=oficina.titulo
-                              if(oficina.descricao)
-                                p.texto-descricao=oficina.descricao
-                    else
-                        .col-6
-                          p.titulo-timeline=atividade.titulo
-                          if(atividade.descricao)
-                            p.texto-descricao=atividade.descricao
+                    .col-10.text-left
+                         div(class=col8_titulo)
+                            if(oficinas)
+                                each oficina in oficinas
+                                    p.titulo-timeline=oficina.titulo
+                                    if(oficina.descricao)
+                                        p.texto-descricao=oficina.descricao
+                            else
+
+                              p(class=classe_titulo)=atividade.titulo
+                              if(atividade.descricao)
+                                p.texto-descricao=atividade.descricao
                    
 
             if(i < last)
