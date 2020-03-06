@@ -1,0 +1,40 @@
+
+/* Parceiros*/
+
+#parceiros .titulo {
+  font-size: 150%; 
+  font-weight: bold; 
+  background: #FFF; 
+  text-align: center; 
+  position: relative;
+  color: rgb(0, 153, 153); 
+  width: 100%; 
+}
+
+section#parceiros, section#palestrantes{
+  height: 100%;
+  min-height: fit-content;
+}
+
+#parceiros > .row {
+  text-align: center;
+  position: relative;
+}
+
+.parceiros-logos {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.parceiros-logo{
+    width: 8%;
+    min-width: 125px;
+    margin: 1% 4%;
+    background-color: #FFF;
+    text-align: center;
+    align-self: center;
+}

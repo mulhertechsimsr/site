@@ -162,12 +162,17 @@
       "hora": "16:40"
     }
   ],
-  "apoiadores": [{
+  "apoiadores": [
+    {
     "nome": "Alura",
     "logo": "alura-logo-cor.svg"
-  }],
-
-  "patrocinadores": [{
+    },
+    { "nome": "Uniesp",
+      "logo": "uniesp-logo-cor.png"
+    }
+  ],
+  "patrocinadores": [
+    {
       "nome": "VSoft",
       "tipo": "ouro",
       "logo": "vsoft-logo-cor.png"
@@ -193,9 +198,44 @@
       "logo": "phoebus-logo-cor.png"
     },
     {
+      "nome": "VText",
+      "tipo": "ouro",
+      "logo": "vtex-logo-cor.svg"
+    },
+    {
+      "nome": "Vox",
+      "tipo": "ouro",
+      "logo": "vox-logo-cor.png"
+    },
+    {
+      "nome": "YPControl",
+      "tipo": "ouro",
+      "logo": "ypcontrol-logo-cor.png"
+    },
+    {
       "nome": "Lance Hotéis",
       "tipo": "ouro",
       "logo": "lancehoteis-logo-cor.png"
+    },
+    {
+      "nome": "Hostdime",
+      "tipo": "ouro",
+      "logo": "hostdime-logo-cor.png"
+    },
+    {
+      "nome": "Esig",
+      "tipo": "ouro",
+      "logo": "esig-logo-cor.png"
+    },
+    {
+      "nome": "Simples",
+      "tipo": "ouro",
+      "logo": "simples-logo-cor.png"
+    },
+    {
+      "nome": "Conpay",
+      "tipo": "ouro",
+      "logo": "conpay-logo-cor.png"
     }
 
   ]
