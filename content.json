@@ -14,71 +14,173 @@
             "github": "",
             "linkedin": ""
         },
-        "titulo": "Palestra 1",
+        "titulo": "Palestra 1: Games, Empreendedorismo e Diversidade.",
         "hora": "09:00",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+        "descricao": " "
     },    
     {
-        "palestrante": "Anicely",
+        "palestrante": "Anicely Santos",
         "foto": "anicely.png",
         "contato": {
             "twitter": "",
             "github": "",
             "linkedin": ""
         },
-        "titulo": "Palestra 2",
+        "titulo": "Palestra 2: Gritaram-me Negra: Quando o racismo dita as regras para a tecnologia",
         "hora": "10:00",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+        "descricao": " "
     },    
     {
-        "palestrante": "Juliana",
+        "palestrante": "Ju Saraiva",
         "foto": "juliana.png",
         "contato": {
             "twitter": "",
             "github": "",
             "linkedin": ""
         },
-        "titulo": "Palestra 3",
+        "titulo": "Palestra 3: Em cada história de vida cabe o roteiro do melhor filme, tudo vai depender de como ela é contada",
         "hora": "",
-        "descricao": ""
+        "descricao": "Deixa ela te mostrar uma forma de contar a sua própria história! Se você acha que não é possível conciliar ensino, pesquisa, extensão, casamento, dois filhos, carreira musical e uma nova graduação nas Ciências Humanas aos 31 anos, você precisa conhecer Ju Saraiva! Essa paraibana arretada já venceu muitos obstáculos e vem pro Mulher Tech contar sua trajetória de sucesso em TI."
     },
+    
     {
       "hora": "14:00",
       "oficinas": [
         {
-            "palestrante": "Fulana",
+            "palestrante": "Lívia Vasconcelos e Micheline Barroso(INOVA-TE) ",
             "foto": "fulana.png",
             "contato": {
                 "twitter": "",
                 "github": "",
                 "linkedin": ""
             },
-            "titulo": "Oficina 2",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+            "titulo": "Oficina: Resolução de Problemas com Design Thinking ",
+            "descricao": "Utilizar a abordagem Design Thinking para desenvolver na equipe as competências de empatia, colaboração e experimentação, com a finalidade de proposição de soluções criativas para diferentes tipos de problemas."
         },    
         {
-            "palestrante": "Beltrana",
+            "palestrante": "Cecília Flávia",
             "foto": "beltrana.png",
             "contato": {
                 "twitter": "",
                 "github": "",
                 "linkedin": ""
             },
-            "titulo": "Oficina 2",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+            "titulo": "Oficina: Deep Learning - teoria à prática ",
+            "descricao": "Já se questionou como utilizar Inteligência Artificial em diferentes aplicações como reconhecimento facial, carros autônomos e detecção de fraudes? Nessa oficina conheceremos Deep Learning, uma técnica muito utilizada para essas e outras aplicações. Não sabe de nada de Inteligência Artificial nem Deep Learning? Se preocupa não que na oficina começamos com um pouquinho de teoria sobre isso e depois engatamos na prática utilizando Python, onde veremos como desenvolver modelos de Deep Learning para reconhecimento de imagens."
         },    
         {
-            "palestrante": "Sicrana",
+            "palestrante": "Andressa Theotônio",
             "foto": "sicrana.png",
             "contato": {
                 "twitter": "",
                 "github": "",
                 "linkedin": ""
             },
-            "titulo": "Oficina 2",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+            "titulo": "Oficina: IoT para Curiosas",
+            "descricao": "IoT. O que é? Onde vive? Do que se alimenta? Para explicar de maneira descomplicada e provar que você consegue incluir Internet das Coisas no seu cotidiano, uma oficina mão na massa e cheia de descobertas."
         
+        },
+        {
+          "palestrante": "Beatriz Nogueira",
+          "foto": "fulana.png",
+          "contato": {
+              "twitter": "",
+              "github": "",
+              "linkedin": ""
+          },
+          "titulo": "Oficina: IoT para Curiosas",
+          "descricao": "IoT. O que é? Onde vive? Do que se alimenta? Para explicar de maneira descomplicada e provar que você consegue incluir Internet das Coisas no seu cotidiano, uma oficina mão na massa e cheia de descobertas."
+      },    
+      {
+          "palestrante": "Bianca Lima",
+          "foto": "beltrana.png",
+          "contato": {
+              "twitter": "",
+              "github": "",
+              "linkedin": ""
+          },
+          "titulo": "Oficina: IoT para Curiosas",
+          "descricao": "IoT. O que é? Onde vive? Do que se alimenta? Para explicar de maneira descomplicada e provar que você consegue incluir Internet das Coisas no seu cotidiano, uma oficina mão na massa e cheia de descobertas."
+      },
+      {
+        "palestrante": "??",
+        "foto": "fulana.png",
+        "contato": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "titulo": "Oficina: Android e Pagamentos Eletrônicos (Phoebus)",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+    },    
+    {
+        "palestrante": "Gercélia Ramos",
+        "foto": "beltrana.png",
+        "contato": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "titulo": "Oficina: Teste de Software: como garantir a qualidade do sistema ?",
+        "descricao": "A necessidade das empresas em produzir software com qualidade tem aumentado a demanda por profissionais com conhecimentos e habilidades em Teste de Software.  Nesta Oficina iremos explorar brevemente sobre a teoria de testes, documentações, ferramentas e processos utilizados nas empresas, em conjunto com demonstrações práticas de testes em uma aplicação WEB."
+    }, 
+    {
+      "palestrante": "??",
+      "foto": "fulana.png",
+      "contato": {
+          "twitter": "",
+          "github": "",
+          "linkedin": ""
+      },
+      "titulo": "Oficina: Engenharia Social na Prática (Conpay)",
+      "descricao": "Muito se tem visto falar sobre ataques cibernéticos, como construir sistemas seguros e como se proteger desses ataques através do uso de ferramentas e procedimentos. Todas essas temáticas são importantes e até consideradas básicas para a construção de uma estratégia de segurança da informação mas às vezes esquecemos que todo esse arsenal de ferramentas e processos podem se tornar inúteis quando as pessoas - muitas vezes por falta de conhecimento - caem em armadilhas de engenharia social. Portanto, engenharia social é um conjunto de métodos em que os criminosos fazem uso para explorar as emoções, fragilidades e falta de conhecimento das pessoas; assim pessoas comuns abrem uma brecha de segurança e os criminosos conseguem acessar e roubar informações privilegiadas. Essa oficina será dividia em dois momentos: primeiro falaremos da teoria por trás da engenharia social, ataques e abordagens mais comuns para que os participantes possuam o conhecimento inicial sobre o tema; em seguida os participantes serão divididos em pequenos grupos onde poderão aplicar o conhecimento sobre os métodos de engenharia social entre os grupos."
+  },    
+  {
+      "palestrante": "Beltrana",
+      "foto": "beltrana.png",
+      "contato": {
+          "twitter": "",
+          "github": "",
+          "linkedin": ""
+      },
+      "titulo": "Oficina: Java e Processamento de Dados (Conductor)",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
+  },
+  {
+    "hora": "16:00",
+    "titulo": "Recrutamento e Empregabilidade",
+     "mesa-redonda":[
+      {
+        "participante":"Janaína Militão",
+        "foto": "beltrana.png ",
+        "contato":{
+          "twitter": "",
+          "github": "",
+          "linkedin": ""
         }
+      },
+        {
+          "participante":"Isaura Lima",
+          "foto": "beltrana.png ",
+          "contato":{
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        }
+      },
+        {
+          "participante":"Alessandra",
+          "foto": "beltrana.png ",
+          "contato":{
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+          }
+        }
+      
+     ]
+     
+  }       
       ]
     },
     {
@@ -92,6 +194,7 @@
       "logo": "alura-logo-cor.svg"
     }
   ],
+ 
   "patrocinadores": [
     {
       "nome": "VSoft",
