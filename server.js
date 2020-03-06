@@ -7,6 +7,10 @@ app.listen(port, () => {
   console.log(`Umbler listening on 	port: ${port}`);
 });
 
+app.get('/inscricoes', (req, res) => {
+  res.redirect("https://mulhertechsimsr2020.eventbrite.com.br/");
+});
+
 app.get('/', (req, res) => {
   res.render('./index', {
   	title: 'Mulher Tech Sim Senhor'
