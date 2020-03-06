@@ -8,7 +8,6 @@
               - foto = "/img/palestrantes/" + atividade.foto
               p.palestrante
                 img.palestrante-foto(src=foto)
-                .saber-mais SABER MAIS
                 palestrante-nome=atividade.palestrante
           if(atividade.oficinas)
             each oficina in atividade.oficinas
@@ -16,16 +15,8 @@
                 - foto = "/img/palestrantes/" + oficina.foto
                 p.palestrante
                   img.palestrante-foto(src=foto)
-                  .saber-mais SABER MAIS
                   span.palestrante-nome=oficina.palestrante
-          if(atividade.mesa-redonda)
-              each oficina in atividade.mesa-redonda
-                a(href="")
-                  - foto = "/img/palestrantes/" + mesa-redonda.foto
-                  p.palestrante
-                    img.palestrante-foto(src=foto)
-                    .saber-mais SABER MAIS
-                    span.palestrante-nome=mesa-redonda.participante
+         
 
 
 
