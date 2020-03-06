@@ -35,14 +35,13 @@ align-items: flex-start;
 justify-content: flex-start;
 }
 
-.atividade .col-10 .col-8.sem-descricao {
+.atividade .col-10 .atividade-conteudo.sem-descricao {
     display: flex;
 }
 
-.atividade .col-10.text-right .col-8.sem-descricao{
+.atividade .col-10.text-right .atividade-conteudo.sem-descricao{
     justify-content: flex-end;
 }
-
 
 
 .titulo-timeline.sem-descricao {
@@ -139,4 +138,23 @@ justify-content: flex-start;
     color: #000;
     font-family: "Cooper Hewitt";
     font-weight: 300;
+}
+
+.oficina {
+    border: 5px solid rgba(255, 187, 170, .5);
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 10px
+}
+
+.oficina::before {
+    content: "";
+    display: block;
+    width: 16.6%;
+    height: 6px;
+    position: absolute;
+    background: rgba(255, 187, 170, .5);
+    top: 50%;
+    left: calc(-16.6% + -5px);
 }

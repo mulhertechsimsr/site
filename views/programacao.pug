@@ -5,17 +5,17 @@
         each atividade, i in content.programacao
             - oficinas = atividade.oficinas
             - classe_titulo = `titulo-timeline` + (atividade.descricao ? "" : " sem-descricao")
-            - col8_titulo = `col-8` + (oficinas || atividade.descricao ? "" : " sem-descricao")
-            - console.log(classe_titulo)
+            - classe_conteudo = `atividade-conteudo col-10` + (oficinas || atividade.descricao ? "" : " sem-descricao")
             .row.atividade
                 if(i % 2)
                     .col-10.text-right
-                        div(class=col8_titulo)
+                        div(class=classe_conteudo)
                             if(oficinas)
                                 each oficina in oficinas
-                                  p.titulo-timeline=oficina.titulo
-                                  if(oficina.descricao)
-                                    p.texto-descricao=oficina.descricao
+                                  .oficina
+                                      p.titulo-timeline=oficina.titulo
+                                      if(oficina.descricao)
+                                        p.texto-descricao=oficina.descricao
                             else
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
@@ -30,12 +30,13 @@
                         .circle=atividade.hora
                 else
                     .col-10.text-left
-                         div(class=col8_titulo)
+                         div(class=classe_conteudo)
                             if(oficinas)
                                 each oficina in oficinas
-                                    p.titulo-timeline=oficina.titulo
-                                    if(oficina.descricao)
-                                        p.texto-descricao=oficina.descricao
+                                    .oficina
+                                        p.titulo-timeline=oficina.titulo
+                                        if(oficina.descricao)
+                                            p.texto-descricao=oficina.descricao
                             else
 
                               p(class=classe_titulo)=atividade.titulo
