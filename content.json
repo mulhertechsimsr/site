@@ -16,7 +16,7 @@
         },
         "titulo": "Palestra 1: Games, Empreendedorismo e Diversidade.",
         "hora": "09:00",
-        "descricao": " "
+        "descricao": " Mais informações em breve "
     },    
     {
         "palestrante": "Anicely Santos",
@@ -28,7 +28,7 @@
         },
         "titulo": "Palestra 2: Gritaram-me Negra: Quando o racismo dita as regras para a tecnologia",
         "hora": "10:00",
-        "descricao": " "
+        "descricao": " Mais informações em breve "
     },    
     {
         "palestrante": "Ju Saraiva",
@@ -102,17 +102,6 @@
           "titulo": "Oficina: IoT para Curiosas",
           "descricao": "IoT. O que é? Onde vive? Do que se alimenta? Para explicar de maneira descomplicada e provar que você consegue incluir Internet das Coisas no seu cotidiano, uma oficina mão na massa e cheia de descobertas."
       },
-      {
-        "palestrante": "??",
-        "foto": "fulana.png",
-        "contato": {
-            "twitter": "",
-            "github": "",
-            "linkedin": ""
-        },
-        "titulo": "Oficina: Android e Pagamentos Eletrônicos (Phoebus)",
-        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
-    },    
     {
         "palestrante": "Gercélia Ramos",
         "foto": "gercelia.png",
@@ -134,18 +123,7 @@
       },
       "titulo": "Oficina: Engenharia Social na Prática (Conpay)",
       "descricao": "Muito se tem visto falar sobre ataques cibernéticos, como construir sistemas seguros e como se proteger desses ataques através do uso de ferramentas e procedimentos. Todas essas temáticas são importantes e até consideradas básicas para a construção de uma estratégia de segurança da informação mas às vezes esquecemos que todo esse arsenal de ferramentas e processos podem se tornar inúteis quando as pessoas - muitas vezes por falta de conhecimento - caem em armadilhas de engenharia social. Portanto, engenharia social é um conjunto de métodos em que os criminosos fazem uso para explorar as emoções, fragilidades e falta de conhecimento das pessoas; assim pessoas comuns abrem uma brecha de segurança e os criminosos conseguem acessar e roubar informações privilegiadas. Essa oficina será dividia em dois momentos: primeiro falaremos da teoria por trás da engenharia social, ataques e abordagens mais comuns para que os participantes possuam o conhecimento inicial sobre o tema; em seguida os participantes serão divididos em pequenos grupos onde poderão aplicar o conhecimento sobre os métodos de engenharia social entre os grupos."
-  },    
-  {
-      "palestrante": "??",
-      "foto": "beltrana.png",
-      "contato": {
-          "twitter": "",
-          "github": "",
-          "linkedin": ""
-      },
-      "titulo": "Oficina: Java e Processamento de Dados (Conductor)",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
-  }      
+  }   
       ]
     },
     {
