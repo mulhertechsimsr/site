@@ -5,17 +5,18 @@
         each atividade, i in content.programacao
             - oficinas = atividade.oficinas
             - classe_titulo = `titulo-timeline` + (atividade.descricao ? "" : " sem-descricao")
-            - classe_conteudo = `atividade-conteudo col-10` + (oficinas || atividade.descricao ? "" : " sem-descricao")
+            - classe_conteudo = `atividade-conteudo col-12` + (oficinas || atividade.descricao ? "" : " sem-descricao")
             .row.atividade
                 if(i % 2)
                     .col-10.text-right
                         div(class=classe_conteudo)
                             if(oficinas)
                                 each oficina in oficinas
-                                  .oficina
-                                      p.titulo-timeline=oficina.titulo
-                                      if(oficina.descricao)
-                                        p.texto-descricao=oficina.descricao
+                                    .oficina
+                                        p.titulo-timeline=oficina.titulo
+                                            if(oficina.descricao)
+                                            p.texto-descricao=oficina.descricao
+                                            p.oficina-ver-mais="ver mais"
                             else
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
@@ -37,6 +38,7 @@
                                         p.titulo-timeline=oficina.titulo
                                         if(oficina.descricao)
                                             p.texto-descricao=oficina.descricao
+                                            p.oficina-ver-mais="ver mais"
                             else
 
                               p(class=classe_titulo)=atividade.titulo
