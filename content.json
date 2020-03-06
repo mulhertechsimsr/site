@@ -70,7 +70,7 @@
         },    
         {
             "palestrante": "Andressa Theotônio",
-            "foto": "sicrana.png",
+            "foto": "andressa.png",
             "contato": {
                 "twitter": "",
                 "github": "",
@@ -82,7 +82,7 @@
         },
         {
           "palestrante": "Beatriz Nogueira",
-          "foto": "fulana.png",
+          "foto": "bia.png",
           "contato": {
               "twitter": "",
               "github": "",
@@ -93,7 +93,7 @@
       },    
       {
           "palestrante": "Bianca Lima",
-          "foto": "beltrana.png",
+          "foto": "bianca.png",
           "contato": {
               "twitter": "",
               "github": "",
@@ -115,7 +115,7 @@
     },    
     {
         "palestrante": "Gercélia Ramos",
-        "foto": "beltrana.png",
+        "foto": "gercelia.png",
         "contato": {
             "twitter": "",
             "github": "",
@@ -125,8 +125,8 @@
         "descricao": "A necessidade das empresas em produzir software com qualidade tem aumentado a demanda por profissionais com conhecimentos e habilidades em Teste de Software.  Nesta Oficina iremos explorar brevemente sobre a teoria de testes, documentações, ferramentas e processos utilizados nas empresas, em conjunto com demonstrações práticas de testes em uma aplicação WEB."
     }, 
     {
-      "palestrante": "??",
-      "foto": "fulana.png",
+      "palestrante": "Daniela Pitta",
+      "foto": "daniela.png",
       "contato": {
           "twitter": "",
           "github": "",
