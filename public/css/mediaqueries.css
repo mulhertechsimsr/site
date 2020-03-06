@@ -44,7 +44,6 @@
     width: 100%;
     text-align: center;
   }
-
   
   .sobre::after{
     top: -100px;
@@ -86,6 +85,9 @@
     width: 150px;
     height: 150px;
     
+  }
+  .tempo{
+    font-size: 70%;  
   }
 }
 
