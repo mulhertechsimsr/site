@@ -136,7 +136,7 @@
       "descricao": "Muito se tem visto falar sobre ataques cibernéticos, como construir sistemas seguros e como se proteger desses ataques através do uso de ferramentas e procedimentos. Todas essas temáticas são importantes e até consideradas básicas para a construção de uma estratégia de segurança da informação mas às vezes esquecemos que todo esse arsenal de ferramentas e processos podem se tornar inúteis quando as pessoas - muitas vezes por falta de conhecimento - caem em armadilhas de engenharia social. Portanto, engenharia social é um conjunto de métodos em que os criminosos fazem uso para explorar as emoções, fragilidades e falta de conhecimento das pessoas; assim pessoas comuns abrem uma brecha de segurança e os criminosos conseguem acessar e roubar informações privilegiadas. Essa oficina será dividia em dois momentos: primeiro falaremos da teoria por trás da engenharia social, ataques e abordagens mais comuns para que os participantes possuam o conhecimento inicial sobre o tema; em seguida os participantes serão divididos em pequenos grupos onde poderão aplicar o conhecimento sobre os métodos de engenharia social entre os grupos."
   },    
   {
-      "palestrante": "Beltrana",
+      "palestrante": "??",
       "foto": "beltrana.png",
       "contato": {
           "twitter": "",
@@ -145,42 +145,7 @@
       },
       "titulo": "Oficina: Java e Processamento de Dados (Conductor)",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor gravida aliquam. Morbi orci urna, iaculis in ligula et, posuere interdum lectus."
-  },
-  {
-    "hora": "16:00",
-    "titulo": "Recrutamento e Empregabilidade",
-     "mesa-redonda":[
-      {
-        "participante":"Janaína Militão",
-        "foto": "beltrana.png ",
-        "contato":{
-          "twitter": "",
-          "github": "",
-          "linkedin": ""
-        }
-      },
-        {
-          "participante":"Isaura Lima",
-          "foto": "beltrana.png ",
-          "contato":{
-            "twitter": "",
-            "github": "",
-            "linkedin": ""
-        }
-      },
-        {
-          "participante":"Alessandra",
-          "foto": "beltrana.png ",
-          "contato":{
-            "twitter": "",
-            "github": "",
-            "linkedin": ""
-          }
-        }
-      
-     ]
-     
-  }       
+  }      
       ]
     },
     {
