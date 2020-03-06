@@ -5,6 +5,7 @@
         each atividade in content.programacao
           if(atividade.palestrante)
             a(href="")
+              .saber-mais Saiba mais
               - foto = "/img/palestrantes/" + atividade.foto
               p.palestrante
                 img.palestrante-foto(src=foto)
@@ -12,6 +13,7 @@
           if(atividade.oficinas)
             each oficina in atividade.oficinas
               a(href="")
+                .saber-mais Saiba mais
                 - foto = "/img/palestrantes/" + oficina.foto
                 p.palestrante
                   img.palestrante-foto(src=foto)

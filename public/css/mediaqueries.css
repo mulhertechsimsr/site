@@ -81,6 +81,12 @@
   .count-down-number-day {
     font-size: 100%;
   }
+
+  .palestrante-foto, .palestrante{
+    width: 150px;
+    height: 150px;
+    
+  }
 }
 
 @media(min-width: 768px){
