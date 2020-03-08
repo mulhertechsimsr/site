@@ -433,9 +433,9 @@ input#email {
 
 .palestrante-foto{
   width: 200px;
-  height: 200px;
   position: relative;
   z-index: 2;
+  float: left;
 }
 
 .palestrante-nome{

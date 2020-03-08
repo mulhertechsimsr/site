@@ -9,7 +9,9 @@
               - foto = "/img/palestrantes/" + atividade.foto
               p.palestrante
                 img.palestrante-foto(src=foto)
-                palestrante-nome=atividade.palestrante
+                //- palestrante-nome=atividade.palestrante
+               
+              
           if(atividade.oficinas)
             each oficina in atividade.oficinas
               a(href="")
@@ -17,7 +19,7 @@
                 - foto = "/img/palestrantes/" + oficina.foto
                 p.palestrante
                   img.palestrante-foto(src=foto)
-                  span.palestrante-nome=oficina.palestrante
+                  //- span.palestrante-nome=oficina.palestrante
          
 
 
