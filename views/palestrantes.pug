@@ -4,24 +4,48 @@
       
         each atividade in content.programacao
           if(atividade.palestrante)
-            a(href="")
-              .saber-mais Saiba mais
+            .thumbnail-wrapper
               - foto = "/img/palestrantes/" + atividade.foto
               p.palestrante
                 img.palestrante-foto(src=foto)
+                button.saber-mais(type='button' data-toggle='modal' data-target='#exampleModalCenter') saiba mais
+
                 //- palestrante-nome=atividade.palestrante
-               
-              
+                #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-content
+                      .modal-header
+                        h5#exampleModalCenterTitle.modal-title !{atividade.palestrante}
+                      
+                      .modal-body
+                        p !{atividade.titulo}
+                        p
+                          span Hora: 
+                          span !{atividade.hora}
+                        p  
+                          span Descrição: 
+                          span !{atividade.descricao}
+                
           if(atividade.oficinas)
             each oficina in atividade.oficinas
-              a(href="")
-                .saber-mais Saiba mais
+              .thumbnail-wrapper
                 - foto = "/img/palestrantes/" + oficina.foto
                 p.palestrante
                   img.palestrante-foto(src=foto)
+                  button.saber-mais(type='button' data-toggle='modal' data-target='#exampleModalCenter') saiba mais
                   //- span.palestrante-nome=oficina.palestrante
-         
-
+                  #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-content
+                      .modal-header
+                        h5#exampleModalCenterTitle.modal-title !{oficina.palestrante}
+                      .modal-body
+                        p !{oficina.titulo}
+                        p Hora: 14:00
+                        p  
+                          span Descrição: 
+                          span !{oficina.descricao}
+                
 
 
 

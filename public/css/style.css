@@ -443,22 +443,40 @@ input#email {
 }
 
 .saber-mais{
-  font-size: 100%;
+  font-size: 150%;
   line-height: 24px;
   color: #ff4292;
   font-family: "Lato";
   font-weight: 900;
-  display: none;
-}
-
-#palestrantes a:hover{
-  text-decoration: none;
-}
-
-#palestrantes a:hover .saber-mais{
+  z-index:3;
   display: block;
-  text-decoration: none;
 }
+
+.thumbnail-wrapper {
+  display:inline-block;
+  position:relative;
+}
+.thumbnail-wrapper button {
+  position:absolute;
+  top:50%;
+  left:50%;
+  background:rgba(255, 255, 255, 0);
+  -webkit-transform:translate3d(-50%, -50%, 0);
+  -moz-transform:translate3d(-50%, -50%, 0);
+  transform:translate3d(-50%, -50%, 0);
+}
+.thumbnail-wrapper button:before {
+  content:"";
+  width: 0;
+  height: 0;
+  position:absolute;
+  top:25px;
+  left:42px;
+}
+.thumbnail-wrapper button:hover, .thumbnail-wrapper button:after:hover {
+  box-shadow:0 0 0 4px rgba(150, 150, 100, 0.7);
+}
+
 
 /* Parceiros*/
 section#parceiros, section#palestrantes{
