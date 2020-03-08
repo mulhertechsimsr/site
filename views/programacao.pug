@@ -15,12 +15,10 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                             if(oficina.descricao)
-                                            p.texto-descricao=oficina.descricao
                                             a.oficina-ver-mais(href="") 
                             else
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
-                                p.texto-descricao=atividade.descricao
                                 a.atividade-ver-mais(href="")
                 else 
                     .col-2.text-center.bottom
