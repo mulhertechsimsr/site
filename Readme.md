@@ -26,3 +26,9 @@ Sempre que houver uma alteração nos arquivos, o site será atualizado automati
 [nodemon] starting `node server.js`
 Express running on address: http://localhost:7000
 ```
+
+## Layout base do bootstrap:
+[Lumen](https://bootswatch.com/lumen/)
+
+## Conversor de HTML -> Pug
+[HTMLToPug](https://html-to-pug.com/)
