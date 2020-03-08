@@ -15,11 +15,11 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                             if(oficina.descricao)
-                                            a.oficina-ver-mais(href="") 
+                                            a.oficina-ver-mais(href="") ver mais
                             else
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
-                                a.atividade-ver-mais(href="")
+                                a.atividade-ver-mais(href="") ver mais
                 else 
                     .col-2.text-center.bottom
                         .circle=atividade.hora
@@ -36,12 +36,12 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                         if(oficina.descricao)
-                                            a.oficina-ver-mais(href="") 
+                                            a.oficina-ver-mais(href="") ver mais
                             else
 
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
-                                a.atividade-ver-mais(href="") 
+                                a.atividade-ver-mais(href="") ver mais
                    
 
             if(i < last)
