@@ -2,28 +2,15 @@
   img.estrela-1(src='img/estrela-branca-1.1.png', alt="")
   img.estrela-1(src='img/estrela-branca-1.2.png', alt="")
 
-  #titulo-combo SUA INSCRIÇÃO TE GARANTE
-  #combo
-    .cards
-      .card
-        .titulo-combos PALESTRAS E OFICINAS
-      .card
-        .titulo-combos MIMOS, ALIMENTAÇÃO E ESPAÇO KIDS
-      .card
-        .titulo-combos NETWORKING
-      .card-primeiro
-        .titulo-combos PALESTRAS E OFICINAS
-        .descricao-combo blablabla
-        .descricao-combo conhecimento
-        .descricao-combo conversa
-        .descricao-combo aprendizados
-      .card-meio
-        .titulo-combos MIMOS, ALIMENTAÇÃO E ESPAÇO KIDS
-        .descricao-combo Queremos ver você feliz 
-        .descricao-combo e confortavel!!!
-      .card-ultimo
-        .titulo-combos NETWORKING
-        .descricao-combo Conheça outras
-        .descricao-combo mulheres e entre
-        .descricao-combo em contato
-        .descricao-combo com empresas
+  p.titulo SUA INSCRIÇÃO TE GARANTE
+  .cards
+    #cards-mobile
+      each grupo in content.combo
+        .card-mobile
+          .titulo-combo=grupo.titulo
+    #cards-desktop
+      each grupo in content.combo
+        .card-desktop
+          img.icone-combo(src="/img/" + grupo.icone)
+          .titulo-combo=grupo.titulo
+          .descricao-combo=grupo.descricao

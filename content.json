@@ -2,6 +2,24 @@
   "sobre": {
     "texto": "O Mulher Tech Sim Senhor é um grande encontro das mulheres de TI da Paraíba, promovido anualmente pelo Women Techmakers JP, um programa de alcance global do Google. <br><br>Realizado desde 2016, o evento oferece à comunidade palestras, mini-cursos e mesas redondas, com discussão não apenas de conteúdos técnicos, mas também de assuntos como diversidade, igualdade de gênero e mercado de trabalho."
   },
+  "combo": [
+    {
+      "titulo": "PALESTRAS E OFICINAS",
+      "descricao": "Praesent accumsan, metus tincidunt pellentesque venenatis, lorem diam sodales urna",
+      "icone": "palestras.png"
+    },
+    {
+      "titulo": "MIMOS, ALIMENTAÇÃO E ESPAÇO KIDS",
+      "descricao": "Nunc gravida tortor fringilla massa auctor volutpat. Fusce gravida, odio sed vestibulum ultrices.",
+      "icone": "mimos.png"
+      
+    },
+    {
+      "titulo": "NETWORKING",
+      "descricao": "Conheça outras mulheres e entre em contato com empresas",
+      "icone": "networking.png"
+    }
+  ],
   "programacao": [{
       "titulo": "Credenciamento",
       "hora": "08:00"
