@@ -36,13 +36,12 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                         if(oficina.descricao)
-                                            p.texto-descricao=oficina.descricao
-                                            p.oficina-ver-mais="ver mais"
+                                            a.oficina-ver-mais(href="") 
                             else
 
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
-                                p.texto-descricao=atividade.descricao
+                                a.atividade-ver-mais(href="") 
                    
 
             if(i < last)
