@@ -15,11 +15,12 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                             if(oficina.descricao)
-                                            a.oficina-ver-mais(href="") ver mais
+                                            oficina
+                                            a.oficina-ver-mais(href="programacao") ver mais
                             else
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
-                                a.atividade-ver-mais(href="") ver mais
+                                a.atividade-ver-mais(href="programacao") ver mais
                 else 
                     .col-2.text-center.bottom
                         .circle=atividade.hora
@@ -36,12 +37,27 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                         if(oficina.descricao)
-                                            a.oficina-ver-mais(href="") ver mais
+                                            a.oficina-ver-mais(href="programacao") ver mais
                             else
 
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
-                                a.atividade-ver-mais(href="") ver mais
+                                a.atividade-ver-mais(href="programacao") ver mais
+                                button.saber-mais(type='button' data-toggle='modal' data-target='#myModal') Saiba mais
+                                #myModal.modal.fade
+                                    .modal-dialog.modal-dialog-centered
+                                        .modal-content
+                                            .modal-header
+                                                    h4.modal-title !{atividade.titulo}
+                                                    button.close(type='button' data-dismiss='modal') &times;
+                                            .modal-body
+                                                p !{atividade.titulo}
+                                                p
+                                                    span Hora: 
+                                                    span !{atividade.hora}
+                                                p  
+                                                    span Descrição: 
+                                                    span !{atividade.descricao}
                    
 
             if(i < last)
@@ -61,4 +77,26 @@
                             hr
                         .col-2
                             .corner.left-bottom        
-                    
+        #programacao.modal
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    h5.modal-title
+                        font(style='alinhamento vertical: herdar')
+                            font(style=' alinhamento vertical: herdar; ')  T&iacute;tulo modal 
+                        tipo(de='' botão='botão' classe='fechar' data-dispensar='modal' aria-label='Fechar')
+                            span(aria-hidden='true')
+                                font(style='alinhamento vertical: herdar;')
+                                    font(style='alinhamento vertical: herdar;')  &amp; times; 
+                .modal-body
+                    p
+                        font(style='alinhamento vertical: herdar;')
+                            font(style='alinhamento vertical: herdar;')  O texto do corpo modal est&aacute; aqui. 
+                .modal-footer
+                    tipo.btn.btn-primary(de='' botão='botão')
+                        font(style='alinhamento vertical: herdar;')
+                            font(style='alinhamento vertical: herdar;')  Salvar altera&ccedil;&otilde;es 
+                            tipo(de='' botão='botão' classe='btn btn-secundário' data-dispensar='modal')
+                                font(style='alinhamento vertical: herdar')
+                                        &gt; 
+                                    font(style='alinhamento vertical: herdar;')  Fechar 
