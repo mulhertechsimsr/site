@@ -9,7 +9,7 @@
             .row.atividade
                 if(i % 2)
                     .col-10.text-right
-                        div(class=classe_conteudo)
+                         div(class=classe_conteudo)
                             if(oficinas)
                                 each oficina in oficinas
                                     .oficina
@@ -31,15 +31,13 @@
                                                                 p  
                                                                     span Descrição: 
                                                                     span !{oficina.descricao}
-                   
-                            else
-                              p(class=classe_titulo)=atividade.titulo
-                              if(atividade.descricao)
-                                a.atividade-ver-mais(href="") ver mais
-                else 
-                    .col-2.text-center.bottom
-                        .circle=atividade.hora
-                    
+                                            else
+                                                p(class=classe_titulo)=atividade.titulo
+                                                if(atividade.descricao)
+                                                    a.atividade-ver-mais(href="") ver mais
+                            else 
+                                .col-2.text-center.bottom
+                                    .circle= atividade.hora                       
 
                 if(i % 2)
                    .col-2.text-center.full
@@ -55,9 +53,9 @@
                                             a.oficina-ver-mais(href="") ver mais
                             else
 
-                              p(class=classe_titulo)=atividade.titulo
-                              if(atividade.descricao)
-                                a.atividade-ver-mais(href="") ver mais
+                                p(class=classe_titulo)=atividade.titulo
+                                if(atividade.descricao)
+                                    a.atividade-ver-mais(href="") ver mais
 
             if(i < last)
                 if(i % 2)
@@ -74,6 +72,9 @@
                             .corner.top-right
                         .col-8
                             hr
-                        .col-2
-                            .corner.left-bottom        
+                             
           
+
+                 
+                
+                    
