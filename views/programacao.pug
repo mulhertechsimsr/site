@@ -15,8 +15,23 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                             if(oficina.descricao)
-                                            oficina
-                                            a.oficina-ver-mais(href="") ver mais
+                                                oficina-descricao = oficina.descricao
+                                                button.ver-mais(type='button' data-toggle='modal' data-target='#programacao') Ver mais
+                                                #programacao.modal.fade
+                                                    .modal-dialog.modal-dialog-centered
+                                                        .modal-content
+                                                            .modal-header
+                                                                h4.modal-title !{oficina.titulo}
+                                                                button.close(type='button' data-dismiss='modal') &times;
+                                                            .modal-body
+                                                                p !{oficina.titulo}
+                                                                p
+                                                                    span Hora: 
+                                                                    span !{oficina.hora}
+                                                                p  
+                                                                    span Descrição: 
+                                                                    span !{oficina.descricao}
+                   
                             else
                               p(class=classe_titulo)=atividade.titulo
                               if(atividade.descricao)
