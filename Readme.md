@@ -26,3 +26,11 @@ Sempre que houver uma alteração nos arquivos, o site será atualizado automati
 [nodemon] starting `node server.js`
 Express running on address: http://localhost:7000
 ```
+## Layout:
+[Layout completo](https://drive.google.com/open?id=14M8or9zPQAX3tzFHNtzw404oeqjsDM1k)
+
+## Layout base do bootstrap:
+[Lumen](https://bootswatch.com/lumen/)
+
+## Conversor de HTML -> Pug
+[HTMLToPug](https://html-to-pug.com/)

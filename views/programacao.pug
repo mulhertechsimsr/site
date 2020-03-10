@@ -9,22 +9,35 @@
             .row.atividade
                 if(i % 2)
                     .col-10.text-right
-                        div(class=classe_conteudo)
+                         div(class=classe_conteudo)
                             if(oficinas)
                                 each oficina in oficinas
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                             if(oficina.descricao)
-                                            p.texto-descricao=oficina.descricao
-                                            p.oficina-ver-mais="ver mais"
-                            else
-                              p(class=classe_titulo)=atividade.titulo
-                              if(atividade.descricao)
-                                p.texto-descricao=atividade.descricao
+                                                oficina-descricao = oficina.descricao
+                                                button.ver-mais(type='button' data-toggle='modal' data-target='#programacao') Ver mais
+                                                #programacao.modal.fade
+                                                    .modal-dialog.modal-dialog-centered
+                                                        .modal-content
+                                                            .modal-header
+                                                                h4.modal-title !{oficina.titulo}
+                                                                button.close(type='button' data-dismiss='modal') &times;
+                                                            .modal-body
+                                                                p !{oficina.titulo}
+                                                                p
+                                                                    span Hora: 
+                                                                    span !{oficina.hora}
+                                                                p  
+                                                                    span Descrição: 
+                                                                    span !{oficina.descricao}
+                                            else
+                                                p(class=classe_titulo)=atividade.titulo
+                                                if(atividade.descricao)
+                                                    a.atividade-ver-mais(href="") ver mais
                 else 
                     .col-2.text-center.bottom
-                        .circle=atividade.hora
-                    
+                        .circle= atividade.hora                       
 
                 if(i % 2)
                    .col-2.text-center.full
@@ -37,14 +50,12 @@
                                     .oficina
                                         p.titulo-timeline=oficina.titulo
                                         if(oficina.descricao)
-                                            p.texto-descricao=oficina.descricao
-                                            p.oficina-ver-mais="ver mais"
+                                            a.oficina-ver-mais(href="") ver mais
                             else
 
-                              p(class=classe_titulo)=atividade.titulo
-                              if(atividade.descricao)
-                                p.texto-descricao=atividade.descricao
-                   
+                                p(class=classe_titulo)=atividade.titulo
+                                if(atividade.descricao)
+                                    a.atividade-ver-mais(href="") ver mais
 
             if(i < last)
                 if(i % 2)
@@ -61,6 +72,9 @@
                             .corner.top-right
                         .col-8
                             hr
-                        .col-2
-                            .corner.left-bottom        
+                             
+          
+
+                 
+                
                     

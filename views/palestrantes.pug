@@ -4,24 +4,46 @@
       
         each atividade in content.programacao
           if(atividade.palestrante)
-            a(href="")
-              .saber-mais Saiba mais
+            .thumbnail-wrapper
               - foto = "/img/palestrantes/" + atividade.foto
+
               p.palestrante
                 img.palestrante-foto(src=foto)
-                palestrante-nome=atividade.palestrante
+                button.saber-mais(type='button' data-toggle='modal' data-target='#myModal') Saiba mais
+                #myModal.modal.fade
+                  .modal-dialog.modal-dialog-centered
+                    .modal-content
+                      .modal-header
+                        h4.modal-title !{atividade.palestrante}
+                        button.close(type='button' data-dismiss='modal') &times;
+                      .modal-body
+                        p !{atividade.titulo}
+                        p
+                          span Hora: 
+                          span !{atividade.hora}
+                        p  
+                          span Descrição: 
+                          span !{atividade.descricao}
+                
           if(atividade.oficinas)
             each oficina in atividade.oficinas
-              a(href="")
-                .saber-mais Saiba mais
+              .thumbnail-wrapper
                 - foto = "/img/palestrantes/" + oficina.foto
                 p.palestrante
                   img.palestrante-foto(src=foto)
-                  span.palestrante-nome=oficina.palestrante
-         
-
-
-
-
-
-    
+                  button.saber-mais(type='button' data-toggle='modal' data-target='#myModal') Saiba mais
+                  #myModal.modal.fade
+                    .modal-dialog.modal-dialog-centered
+                      .modal-content
+                        .modal-header
+                          h4.modal-title !{oficina.palestrante}
+                          button.close(type='button' data-dismiss='modal') &times;
+                        .modal-body
+                          p !{oficina.titulo}
+                          p
+                            span Hora: 
+                            span !{oficina.hora}
+                          p  
+                            span Descrição: 
+                            span !{oficina.descricao}
+                  
