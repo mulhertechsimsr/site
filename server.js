@@ -23,6 +23,10 @@ app.get('/encomendas/cadernos', (req, res) => {
   res.redirect("https://drive.google.com/drive/u/0/folders/1YA4QH312iWTh54X4GL4i7GMCTkBiWMYC");
 });
 
+app.get('/lista-de-espera-atividade-da-tarde', (req, res) => {
+  res.redirect("https://docs.google.com/forms/d/e/1FAIpQLSedxMKE8QYqdHXQtU7LD9fLd0YRisAfUR3zjwScct6w-vURpQ/viewform");
+});
+
 app.get('/', (req, res) => {
   res.render('./index', {
   	title: 'Mulher Tech Sim Senhor'
