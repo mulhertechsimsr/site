@@ -1,0 +1,18 @@
+p.palestrante
+  img.palestrante-foto(src=foto)
+  button.saber-mais(type='button' data-toggle='modal' data-target='#palestrante-' + count) Saiba mais
+  .modal.fade(id="palestrante-" + count )
+    .modal-dialog.modal-dialog-centered
+      .modal-content
+        .modal-header
+          h4.modal-title !{palestrante}
+          button.close(type='button' data-dismiss='modal') &times;
+        .modal-body
+          p !{palestrante_titulo}
+          p
+            span Hora: 
+            span !{palestrante_hora}
+          p  
+            span Descrição: 
+            span !{palestrante_descricao}
+- count++
