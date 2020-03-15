@@ -1,0 +1,27 @@
+- oficinas = atividade.oficinas
+- classe_titulo = `titulo-timeline` + (oficinas || atividade.descricao ? "" : " sem-descricao")
+- classe_conteudo = `atividade-conteudo col-10` + (oficinas || atividade.descricao ? "" : " sem-descricao")
+
+div(class=classe_conteudo)
+  if(oficinas)
+      each oficina, o in oficinas
+          - atividade_modal_id = "oficina-" + o
+          - atividade_modal_titulo = oficina.titulo
+          - atividade_modal_hora = atividade.hora
+          - atividade_modal_descricao = oficina.descricao
+          .oficina
+              div(class=classe_titulo)=oficina.titulo
+              .circle.ver-mais(data-toggle='modal' data-target='#' + atividade_modal_id)
+                i.fa.fa-search
+
+          include atividade-modal
+  else
+      div(class=classe_titulo)=atividade.titulo
+      if(atividade.descricao)
+        - atividade_modal_id = "atividade-" + i
+        - atividade_modal_titulo = atividade.titulo
+        - atividade_modal_hora = atividade.hora
+        - atividade_modal_descricao = atividade.descricao
+        .circle.ver-mais(data-toggle='modal' data-target='#' + atividade_modal_id)
+          i.fa.fa-search
+        include atividade-modal

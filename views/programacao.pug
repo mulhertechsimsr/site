@@ -3,59 +3,20 @@
     .container
         - last = content.programacao.length - 1
         each atividade, i in content.programacao
-            - oficinas = atividade.oficinas
-            - classe_titulo = `titulo-timeline` + (atividade.descricao ? "" : " sem-descricao")
-            - classe_conteudo = `atividade-conteudo col-12` + (oficinas || atividade.descricao ? "" : " sem-descricao")
             .row.atividade
                 if(i % 2)
                     .col-10.text-right
-                         div(class=classe_conteudo)
-                            if(oficinas)
-                                each oficina in oficinas
-                                    .oficina
-                                        p.titulo-timeline=oficina.titulo
-                                            if(oficina.descricao)
-                                                oficina-descricao = oficina.descricao
-                                                button.ver-mais(type='button' data-toggle='modal' data-target='#programacao') Ver mais
-                                                #programacao.modal.fade
-                                                    .modal-dialog.modal-dialog-centered
-                                                        .modal-content
-                                                            .modal-header
-                                                                h4.modal-title !{oficina.titulo}
-                                                                button.close(type='button' data-dismiss='modal') &times;
-                                                            .modal-body
-                                                                p !{oficina.titulo}
-                                                                p
-                                                                    span Hora: 
-                                                                    span !{oficina.hora}
-                                                                p  
-                                                                    span Descrição: 
-                                                                    span !{oficina.descricao}
-                                            else
-                                                p(class=classe_titulo)=atividade.titulo
-                                                if(atividade.descricao)
-                                                    a.atividade-ver-mais(href="") ver mais
+                         include atividade
                 else 
                     .col-2.text-center.bottom
-                        .circle= atividade.hora                       
+                        .circle=atividade.hora                       
 
                 if(i % 2)
                    .col-2.text-center.full
                         .circle=atividade.hora
                 else
                     .col-10.text-left
-                         div(class=classe_conteudo)
-                            if(oficinas)
-                                each oficina in oficinas
-                                    .oficina
-                                        p.titulo-timeline=oficina.titulo
-                                        if(oficina.descricao)
-                                            a.oficina-ver-mais(href="") ver mais
-                            else
-
-                                p(class=classe_titulo)=atividade.titulo
-                                if(atividade.descricao)
-                                    a.atividade-ver-mais(href="") ver mais
+                         include atividade
 
             if(i < last)
                 if(i % 2)
@@ -72,7 +33,8 @@
                             .corner.top-right
                         .col-8
                             hr
-                             
+                        .col-2
+                           .corner.left-bottom                            
           
 
                  

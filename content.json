@@ -101,7 +101,7 @@
             }
           ],
           "titulo": "Mesa redonda: Recrutamento e Empregabilidade",
-          "descricao": "Como conseguir um emprego? O que as empresas esperam das pessoas que se candidatam? Conhecimento técnico vale mais que soft skills? O que é um bom currículo? Se você tem essas e outras dúvidas sobre mercado de trabalho, emprego e processo seletivo das empresas, venha participar dessa mesa redonda que vai reunir três pontos de vista diferentes e esclarecer muito do que ninguém diz por aí."
+          "descricao": "Como conseguir um emprego? O que as empresas esperam das pessoas que se candidatam? Conhecimento técnico vale mais que soft skills? O que é um bom currículo? <br><br> Se você tem essas e outras dúvidas sobre mercado de trabalho, emprego e processo seletivo das empresas, venha participar dessa mesa redonda que vai reunir três pontos de vista diferentes e esclarecer muito do que ninguém diz por aí."
         },
         {
           "palestrante": "Lívia Vasconcelos e Micheline Barroso(INOVA-TE) ",
@@ -123,7 +123,7 @@
             "linkedin": ""
           },
           "titulo": "Oficina: Deep Learning - teoria à prática ",
-          "descricao": "Já se questionou como utilizar Inteligência Artificial em diferentes aplicações como reconhecimento facial, carros autônomos e detecção de fraudes? Nessa oficina conheceremos Deep Learning, uma técnica muito utilizada para essas e outras aplicações. Não sabe de nada de Inteligência Artificial nem Deep Learning? Se preocupa não que na oficina começamos com um pouquinho de teoria sobre isso e depois engatamos na prática utilizando Python, onde veremos como desenvolver modelos de Deep Learning para reconhecimento de imagens."
+          "descricao": "Já se questionou como utilizar Inteligência Artificial em diferentes aplicações como reconhecimento facial, carros autônomos e detecção de fraudes? <br><br> Nessa oficina conheceremos Deep Learning, uma técnica muito utilizada para essas e outras aplicações. Não sabe de nada de Inteligência Artificial nem Deep Learning? Se preocupa não que na oficina começamos com um pouquinho de teoria sobre isso e depois engatamos na prática utilizando Python, onde veremos como desenvolver modelos de Deep Learning para reconhecimento de imagens."
         },
         {
           "palestrantes": [{
@@ -165,8 +165,8 @@
             "github": "",
             "linkedin": ""
           },
-          "titulo": "Oficina: Teste de Software: como garantir a qualidade do sistema ?",
-          "descricao": "A necessidade das empresas em produzir software com qualidade tem aumentado a demanda por profissionais com conhecimentos e habilidades em Teste de Software.  Nesta Oficina iremos explorar brevemente sobre a teoria de testes, documentações, ferramentas e processos utilizados nas empresas, em conjunto com demonstrações práticas de testes em uma aplicação WEB."
+          "titulo": "Oficina: Teste de Software: como garantir a qualidade do sistema?",
+          "descricao": "A necessidade das empresas em produzir software com qualidade tem aumentado a demanda por profissionais com conhecimentos e habilidades em Teste de Software.<br><br>Nesta oficina iremos explorar brevemente sobre a teoria de testes, documentações, ferramentas e processos utilizados nas empresas, em conjunto com demonstrações práticas de testes em uma aplicação WEB."
         },
         {
           "palestrante": "Daniela Pitta",
@@ -176,8 +176,8 @@
             "github": "",
             "linkedin": ""
           },
-          "titulo": "Oficina: Engenharia Social na Prática (Conpay)",
-          "descricao": "Muito se tem visto falar sobre ataques cibernéticos, como construir sistemas seguros e como se proteger desses ataques através do uso de ferramentas e procedimentos. Todas essas temáticas são importantes e até consideradas básicas para a construção de uma estratégia de segurança da informação mas às vezes esquecemos que todo esse arsenal de ferramentas e processos podem se tornar inúteis quando as pessoas - muitas vezes por falta de conhecimento - caem em armadilhas de engenharia social. Portanto, engenharia social é um conjunto de métodos em que os criminosos fazem uso para explorar as emoções, fragilidades e falta de conhecimento das pessoas; assim pessoas comuns abrem uma brecha de segurança e os criminosos conseguem acessar e roubar informações privilegiadas. Essa oficina será dividia em dois momentos: primeiro falaremos da teoria por trás da engenharia social, ataques e abordagens mais comuns para que os participantes possuam o conhecimento inicial sobre o tema; em seguida os participantes serão divididos em pequenos grupos onde poderão aplicar o conhecimento sobre os métodos de engenharia social entre os grupos."
+          "titulo": "Oficina: Engenharia Social na Prática",
+          "descricao": "Muito se tem visto falar sobre ataques cibernéticos, como construir sistemas seguros e como se proteger desses ataques através do uso de ferramentas e procedimentos. <br><br> Todas essas temáticas são importantes e até consideradas básicas para a construção de uma estratégia de segurança da informação mas às vezes esquecemos que todo esse arsenal de ferramentas e processos podem se tornar inúteis quando as pessoas - muitas vezes por falta de conhecimento - caem em armadilhas de engenharia social. <br><br> Portanto, engenharia social é um conjunto de métodos em que os criminosos fazem uso para explorar as emoções, fragilidades e falta de conhecimento das pessoas; assim pessoas comuns abrem uma brecha de segurança e os criminosos conseguem acessar e roubar informações privilegiadas. <br><br> Essa oficina será dividia em dois momentos: primeiro falaremos da teoria por trás da engenharia social, ataques e abordagens mais comuns para que os participantes possuam o conhecimento inicial sobre o tema; em seguida os participantes serão divididos em pequenos grupos onde poderão aplicar o conhecimento sobre os métodos de engenharia social entre os grupos."
         }
       ]
     },

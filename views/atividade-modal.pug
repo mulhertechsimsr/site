@@ -1,0 +1,13 @@
+.atividade-modal.modal.fade(id=atividade_modal_id)
+  .modal-dialog.modal-dialog-centered
+      .modal-content
+          .modal-header
+              h4.modal-title=atividade_modal_titulo
+              button.close(type='button' data-dismiss='modal') &times;
+          .modal-body
+              p
+                  span Hora: 
+                  span=atividade_modal_hora
+              p!=atividade_modal_descricao
+
+

@@ -25,14 +25,16 @@
     justify-content: center;
 }
 
-.atividade .col-10.text-right {
-align-items: flex-end;
-    justify-content: flex-start;
+.atividade .col-10.text-right,
+.atividade .col-10.text-right .atividade-conteudo {
+    align-items: flex-end;
+    justify-content: center;
 }
 
+
 .atividade .col-10.text-left {
-align-items: flex-start;
-justify-content: flex-start;
+    /*align-items: flex-start;
+    justify-content: flex-start;*/
 }
 
 .atividade .col-10 .atividade-conteudo.sem-descricao {
@@ -40,12 +42,16 @@ justify-content: flex-start;
 }
 
 .atividade .col-10.text-right .atividade-conteudo.sem-descricao{
-    justify-content: flex-end;
+   justify-content: center;
 }
 
+.text-left .titulo-timeline.sem-descricao {
+    align-self: left;
+    margin-bottom: 0;
+}
 
-.titulo-timeline.sem-descricao {
-    align-self: center;
+.text-right .titulo-timeline.sem-descricao {
+    align-self: right;
     margin-bottom: 0;
 }
 
@@ -126,10 +132,11 @@ justify-content: flex-start;
 .titulo-timeline{
     font-size: 18pt;
     line-height: 24px;
-    color: #009999;
+    color: #414141;
     font-family: "Cooper Hewitt";
     font-weight: bolder;
     font-style: italic;
+    margin-bottom: 0;
 }
 
 .texto-descricao{
@@ -142,15 +149,15 @@ justify-content: flex-start;
 
 .oficina {
     border: 3px solid rgba(204, 0, 102);
-    padding: 20px;
+    padding: 15px 20px 15px 15px;
     margin: 10px 0;
     position: relative;
     border-radius: 10px;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
     z-index: 3;
     background: #fff;
+
+    display: flex;
+    align-items: center;
 }
 
 /*.oficina::before{
@@ -174,6 +181,7 @@ justify-content: flex-start;
 
 .oficina .titulo-timeline {
     font-size: 18pt;
+    margin-bottom: 0;
 }
 
 .oficina .texto-descricao {
@@ -181,9 +189,36 @@ justify-content: flex-start;
     margin-bottom: 30px;
 }
 
-p.oficina-ver-mais {
-    font-size: 12pt;
+.ver-mais {
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    font-size: 14pt;
+    line-height: 13pt;
+    width: 28pt;
+    height: 28pt;
+    
     margin: 0;
-    padding: 0;
     cursor: pointer;
+}
+
+.text-left .atividade-conteudo .ver-mais {
+    left: calc(-7pt - 27px);
+}
+
+.text-left .oficina .ver-mais {
+    left: auto;
+    right: calc(-7pt - 10px);
+}
+
+.text-right .ver-mais {
+    right: calc(-7pt - 26px);
+    top: 8pt
+}
+
+.atividade-modal p {
+    color: #414141;
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: left;
 }
