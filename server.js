@@ -11,6 +11,18 @@ app.get('/inscricoes', (req, res) => {
   res.redirect("https://mulhertechsimsr2020.eventbrite.com.br/");
 });
 
+app.get('/encomendas', (req, res) => {
+  res.redirect("https://mulhertechsimsenhor.typeform.com/to/dydGbB");
+});
+
+app.get('/encomendas/camisas', (req, res) => {
+  res.redirect("https://drive.google.com/drive/u/0/folders/1QB_aFjcRJH5fDM8fYDtDAB0JJlrz8oK1");
+});
+
+app.get('/encomendas/cadernos', (req, res) => {
+  res.redirect("https://drive.google.com/drive/u/0/folders/1YA4QH312iWTh54X4GL4i7GMCTkBiWMYC");
+});
+
 app.get('/', (req, res) => {
   res.render('./index', {
   	title: 'Mulher Tech Sim Senhor'
